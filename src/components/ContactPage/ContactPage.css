@@ -38,12 +38,12 @@
 
 .contact-page__content-left {
     margin-right: 20px;
-    width: calc(30% - 20px);
+    width: calc(35% - 20px);
     max-width: 350px;
 }
 
 .contact-page__content-right {
-    width: 70%;
+    width: 65%;
 }
 
 .contact-page__input {
@@ -104,7 +104,7 @@
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .contact-page {
         padding: 40px;
     }

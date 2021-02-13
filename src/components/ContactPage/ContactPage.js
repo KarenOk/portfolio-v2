@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactPage.css";
+import { ToastsStore } from "react-toasts";
 import {
 	GithubIcon,
 	LinkedinIcon,
@@ -7,6 +8,48 @@ import {
 } from "../../images/icons/icons";
 
 const ContactPage = () => {
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		subject: "I",
+		message: "",
+	});
+
+	const onChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	const onSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const res = await fetch("https://formcarry.com/s/mIxothu74S", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+					Accept: "application/json",
+				},
+				body: JSON.stringify(formData),
+			});
+
+			if (!res.ok) {
+				await res.text().then((text) => {
+					throw Error(text);
+				});
+			}
+			ToastsStore.success(
+				"Your message was sent successfully. I'll get back to you shortly.",
+				5000
+			);
+			console.log(res);
+		} catch (err) {
+			ToastsStore.error(
+				"Something went wrong while sending your message.",
+				5000
+			);
+			console.log(err);
+		}
+	};
+
 	return (
 		<section className="contact-page">
 			<header className="contact-page__header">
@@ -34,19 +77,43 @@ const ContactPage = () => {
 					</p>
 				</div>
 				<div className="contact-page__content-right">
-					<form className="contact-page__form">
-						<input className="contact-page__input" placeholder="Your name" />
+					<form className="contact-page__form" onSubmit={onSubmit}>
+						<input
+							className="contact-page__input"
+							placeholder="Your name"
+							name="name"
+							aria-label="Your name"
+							required
+							value={formData.name}
+							onChange={onChange}
+						/>
 						<input
 							className="contact-page__input"
 							placeholder="Email address"
+							aria-label="Email address"
+							name="email"
+							type="email"
+							required
+							value={formData.email}
+							onChange={onChange}
 						/>
 						<input
 							className="contact-page__input contact-page__input--full"
 							placeholder="Subject"
+							aria-label="Subject"
+							name="subject"
+							required
+							value={formData.subject}
+							onChange={onChange}
 						/>
 						<textarea
 							className="contact-page__input contact-page__textarea"
 							placeholder="Message"
+							aria-label="Message"
+							name="message"
+							required
+							value={formData.message}
+							onChange={onChange}
 						></textarea>
 
 						<div style={{ textAlign: "right" }}>

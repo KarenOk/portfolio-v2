@@ -7,6 +7,7 @@ import {
 	NavLink,
 	Redirect,
 } from "react-router-dom";
+import { ToastsContainer, ToastsStore } from "react-toasts";
 import logo from "./logos/logo6 white animated.svg";
 import Banner1 from "./images/banner 1.jpeg";
 import Banner2 from "./images/banner 2.jpeg";
@@ -134,6 +135,8 @@ function App() {
 					<Route exact path="/" component={LandingPage} />
 					<Route render={() => <Redirect to="/" />} />
 				</Switch>
+
+				<ToastsContainer store={ToastsStore} />
 			</div>
 		</Router>
 	);

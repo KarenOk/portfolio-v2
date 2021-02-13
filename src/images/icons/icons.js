@@ -102,9 +102,9 @@ export const MenuIcon = ({
 			<path
 				d="M4 6H20M4 12H12M4 18H20"
 				stroke={stroke}
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-width="2"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="2"
 			/>
 		</svg>
 	);

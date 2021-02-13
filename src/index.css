@@ -27,3 +27,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+.toasts-container {
+  bottom: 20px !important;
+}

@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	NavLink,
+	Redirect,
+} from "react-router-dom";
 import logo from "./logos/logo6 white animated.svg";
 import Banner1 from "./images/banner 1.jpeg";
 import Banner2 from "./images/banner 2.jpeg";
@@ -58,33 +64,58 @@ function App() {
 					<nav className={`app__nav ${showNav ? "show" : ""}`}>
 						<ul className="app__nav-list">
 							<li className="app__nav-item">
-								<a href="#!" className="app__nav-link app__nav-link--active">
+								<NavLink
+									exact
+									to="/"
+									activeClassName="app__nav-link--active"
+									className="app__nav-link"
+								>
 									Home
-								</a>
+								</NavLink>
 								<HomeIcon fill="white" width={20} className="app__nav-icon" />
 							</li>
 							<li className="app__nav-item">
-								<a href="#!" className="app__nav-link">
+								<NavLink
+									exact
+									to="/about"
+									activeClassName="app__nav-link--active"
+									className="app__nav-link"
+								>
 									About
-								</a>
+								</NavLink>
 								<HomeIcon fill="white" width={20} className="app__nav-icon" />
 							</li>
 							<li className="app__nav-item">
-								<a href="#!" className="app__nav-link">
+								<NavLink
+									exact
+									to="/resume"
+									activeClassName="app__nav-link--active"
+									className="app__nav-link"
+								>
 									Resume
-								</a>
+								</NavLink>
 								<HomeIcon fill="white" width={20} className="app__nav-icon" />
 							</li>
 							<li className="app__nav-item">
-								<a href="#!" className="app__nav-link">
+								<NavLink
+									exact
+									to="/portfolio"
+									activeClassName="app__nav-link--active"
+									className="app__nav-link"
+								>
 									Portfolio
-								</a>
+								</NavLink>
 								<HomeIcon fill="white" width={20} className="app__nav-icon" />
 							</li>
 							<li className="app__nav-item">
-								<a href="#!" className="app__nav-link">
+								<NavLink
+									exact
+									to="/contact"
+									activeClassName="app__nav-link--active"
+									className="app__nav-link"
+								>
 									Contact
-								</a>
+								</NavLink>
 								<HomeIcon fill="white" width={20} className="app__nav-icon" />
 							</li>
 						</ul>
@@ -100,7 +131,8 @@ function App() {
 
 				<Switch>
 					<Route exact path="/contact" component={ContactPage} />
-					<Route path="/" component={LandingPage} />
+					<Route exact path="/" component={LandingPage} />
+					<Route render={() => <Redirect to="/" />} />
 				</Switch>
 			</div>
 		</Router>

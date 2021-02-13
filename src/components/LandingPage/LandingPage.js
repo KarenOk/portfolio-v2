@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import Typewriter from "typewriter-effect";
+import { NavLink } from "react-router-dom";
 import {
 	EmailIcon,
 	GithubIcon,
@@ -29,32 +30,54 @@ const LandingPage = ({ isHome }) => {
 				<nav className={`landing-page__nav ${isHome ? "show" : ""}`}>
 					<ul className="landing-page__nav-list">
 						<li className="landing-page__nav-item">
-							<a
-								href="#!"
-								className="landing-page__nav-link landing-page__nav-link--active"
+							<NavLink
+								exact
+								to="/"
+								activeClassName="landing-page__nav-link--active"
+								className="landing-page__nav-link"
 							>
 								Home
-							</a>
+							</NavLink>
 						</li>
 						<li className="landing-page__nav-item">
-							<a href="#!" className="landing-page__nav-link">
+							<NavLink
+								exact
+								to="/about"
+								activeClassName="landing-page__nav-link--active"
+								className="landing-page__nav-link"
+							>
 								About
-							</a>
+							</NavLink>
 						</li>
 						<li className="landing-page__nav-item">
-							<a href="#!" className="landing-page__nav-link">
+							<NavLink
+								exact
+								to="/resume"
+								activeClassName="landing-page__nav-link--active"
+								className="landing-page__nav-link"
+							>
 								Resume
-							</a>
+							</NavLink>
 						</li>
 						<li className="landing-page__nav-item">
-							<a href="#!" className="landing-page__nav-link">
+							<NavLink
+								exact
+								to="/portfolio"
+								activeClassName="landing-page__nav-link--active"
+								className="landing-page__nav-link"
+							>
 								Portfolio
-							</a>
+							</NavLink>
 						</li>
 						<li className="landing-page__nav-item">
-							<a href="#!" className="landing-page__nav-link">
+							<NavLink
+								exact
+								to="/contact"
+								activeClassName="landing-page__nav-link--active"
+								className="landing-page__nav-link"
+							>
 								Contact
-							</a>
+							</NavLink>
 						</li>
 					</ul>
 				</nav>

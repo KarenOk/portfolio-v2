@@ -75,13 +75,13 @@ const ContactPage = () => {
 								href="https://www.linkedin.com/in/karenokonkwo/"
 								className="social__link"
 							>
-								<LinkedinIcon className="social__icon" />
+								<LinkedinIcon className="social__icon" fill="#0072b1" />
 								LinkedIn
 							</a>
 						</li>
 						<li className="social__item">
 							<a href="https://www.twitter.com/" className="social__link">
-								<TwitterIcon className="social__icon" />
+								<TwitterIcon className="social__icon" fill="#1DA1F2" />
 								Twitter
 							</a>
 						</li>

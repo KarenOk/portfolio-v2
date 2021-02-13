@@ -1,5 +1,6 @@
 .landing-page {
     height: 100vh;
+    max-width: 100%;
     background-color: black;
     transition: background-image 0.2s ease-in-out;
     background-size: cover;
@@ -24,9 +25,28 @@
     z-index: 200;
 }
 
+.landing-page__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .landing-page__logo {
     width: 120px;
     padding: 20px;
+}
+
+.landing-page__menu-btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.landing-page__menu-icon {
+    display: none;
 }
 
 .landing-page__body {
@@ -117,4 +137,32 @@
 
 .landing-page .social__icon:hover {
     fill: #faa84b;
+}
+
+@media only screen and (max-width: 750px) {
+    .landing-page {
+        font-size: 0.8em;
+    }
+    .landing-page__menu-icon {
+        display: block;
+    }
+    .landing-page__nav {
+        display: none;
+    }
+    .landing-page__name {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    .landing-page__role {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .landing-page__text-cont {
+        width: 90%;
+    }
+    .landing-page__menu-btn {
+        margin-right: 20px;
+    }
 }

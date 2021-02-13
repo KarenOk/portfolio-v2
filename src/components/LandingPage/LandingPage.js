@@ -8,6 +8,7 @@ import {
 	EmailIcon,
 	GithubIcon,
 	LinkedinIcon,
+	MenuIcon,
 	TwitterIcon,
 } from "../../images/icons/icons";
 
@@ -43,6 +44,13 @@ const LandingPage = () => {
 						type="image/svg+xml"
 					/>
 				</a>
+				<button aria-label="Menu" className="landing-page__menu-btn">
+					<MenuIcon
+						className="landing-page__menu-icon"
+						height={60}
+						fill="white"
+					/>
+				</button>
 			</header>
 			<div className="landing-page__body">
 				<div className="landing-page__text-cont">

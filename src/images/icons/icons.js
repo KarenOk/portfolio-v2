@@ -82,3 +82,29 @@ export const LinkedinIcon = ({
 		</svg>
 	);
 };
+
+export const MenuIcon = ({
+	fill = "currentColor",
+	className,
+	width = 30,
+	height = 30,
+}) => {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 24 46"
+			fill={fill}
+			className={className}
+			width={width}
+			height={height}
+		>
+			<path
+				d="M4 6H20M4 12H12M4 18H20"
+				stroke={fill}
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+			/>
+		</svg>
+	);
+};

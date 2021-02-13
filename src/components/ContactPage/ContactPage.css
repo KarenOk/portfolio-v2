@@ -2,6 +2,7 @@
     width: 90%;
     min-height: calc(100vh - 120px);
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -88,6 +89,7 @@
 
 .contact-page .social {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-page .social__link {
@@ -120,5 +122,25 @@
     .contact-page .social__link {
         margin-top: 30px;
         margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-page {
+        padding: 40px 20px;
+    }
+    .contact-page__heading--main {
+        font-size: 2.3em;
+    }
+    .contact-page__subheading {
+        font-size: 1.1em;
+    }
+    .contact-page__input {
+        width: calc(100% - 20px);
+        font-size: 1.1em;
+    }
+    .contact-page .social {
+        flex-direction: column;
+        align-items: center;
     }
 }

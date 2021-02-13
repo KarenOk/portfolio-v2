@@ -11,7 +11,7 @@ const ContactPage = () => {
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
-		subject: "I",
+		subject: "",
 		message: "",
 	});
 
@@ -41,6 +41,12 @@ const ContactPage = () => {
 				5000
 			);
 			console.log(res);
+			setFormData({
+				name: "",
+				email: "",
+				subject: "",
+				message: "",
+			});
 		} catch (err) {
 			ToastsStore.error(
 				"Something went wrong while sending your message.",

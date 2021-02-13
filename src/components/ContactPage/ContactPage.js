@@ -22,7 +22,7 @@ const ContactPage = () => {
 	const onSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const res = await fetch("https://formcarry.com/s/mIxothu74S", {
+			const res = await fetch("https://formspree.io/f/xdopvkjw", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -40,7 +40,6 @@ const ContactPage = () => {
 				"Your message was sent successfully. I'll get back to you shortly.",
 				5000
 			);
-			console.log(res);
 			setFormData({
 				name: "",
 				email: "",
@@ -52,7 +51,7 @@ const ContactPage = () => {
 				"Something went wrong while sending your message.",
 				5000
 			);
-			console.log(err);
+			console.error(err);
 		}
 	};
 

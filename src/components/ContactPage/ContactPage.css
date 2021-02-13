@@ -1,7 +1,7 @@
 .contact-page {
     width: 90%;
-    min-height: calc(100vh - 120px);
-    overflow-y: scroll;
+    /* min-height: calc(100vh - 120px); */
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     background-color: white;
     display: flex;
@@ -128,6 +128,7 @@
 @media only screen and (max-width: 500px) {
     .contact-page {
         padding: 40px 20px;
+        padding-bottom: 200px;
     }
     .contact-page__heading--main {
         font-size: 2.3em;

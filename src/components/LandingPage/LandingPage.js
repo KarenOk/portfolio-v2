@@ -14,7 +14,11 @@ import {
 	CloseCircleIcon,
 } from "../../images/icons/icons";
 
-const banners = [Banner1, Banner2];
+// const banners = [Banner1, Banner2];
+const banners = [
+	"https://res.cloudinary.com/karso/image/upload/v1613217031/Portfolio/banner_1_jqcqno.jpg",
+	"https://res.cloudinary.com/karso/image/upload/v1613217032/Portfolio/banner_2_olqefy.jpg",
+];
 
 const LandingPage = () => {
 	const [banner, setBanner] = useState(0);

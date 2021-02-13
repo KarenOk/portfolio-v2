@@ -1,8 +1,9 @@
 .landing-page {
     height: 100vh;
     max-width: 100%;
+    backface-visibility: hidden;
     background-color: black;
-    transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;

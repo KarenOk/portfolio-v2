@@ -24,14 +24,17 @@ const ContactPage = () => {
 					</h2>
 					<p>
 						Don't like forms? Send me an{" "}
-						<a href="#!" className="contact-page__link">
+						<a
+							href="mailto:karenokonkwo29@gmail.com"
+							className="contact-page__link"
+						>
 							email
 						</a>
 						. 👋
 					</p>
 				</div>
 				<div className="contact-page__content-right">
-					<form>
+					<form className="contact-page__form">
 						<input className="contact-page__input" placeholder="Your name" />
 						<input
 							className="contact-page__input"

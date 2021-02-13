@@ -74,9 +74,6 @@
 
 .landing-page__nav-list {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .landing-page__nav-item {
@@ -107,4 +104,17 @@
 .landing-page__nav-link:hover::after, .landing-page__nav-link--active::after {
     transform: translate3d(0, 0, 0);
     background: #faa84b;
+}
+
+.landing-page .social {
+    margin-top: 20px;
+    display: flex;
+}
+
+.landing-page .social__item {
+    margin-right: 30px
+}
+
+.landing-page .social__icon:hover {
+    fill: #faa84b;
 }

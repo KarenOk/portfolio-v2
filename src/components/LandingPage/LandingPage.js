@@ -4,6 +4,12 @@ import logo from "../../logos/logo6 white animated.svg";
 import Banner1 from "../../images/banner 1.jpeg";
 import Banner2 from "../../images/banner 2.jpeg";
 import Typewriter from "typewriter-effect";
+import {
+	EmailIcon,
+	GithubIcon,
+	LinkedinIcon,
+	TwitterIcon,
+} from "../../images/icons/icons";
 
 const banners = [Banner1, Banner2];
 
@@ -86,6 +92,38 @@ const LandingPage = () => {
 							</li>
 						</ul>
 					</nav>
+
+					<ul className="social">
+						<li className="social__item">
+							<a
+								href="https://github.com/KarenOk"
+								className="social__link social__link--active"
+							>
+								<GithubIcon className="social__icon" />
+							</a>
+						</li>
+						<li className="social__item">
+							<a
+								href="https://www.linkedin.com/in/karenokonkwo/"
+								className="social__link"
+							>
+								<LinkedinIcon className="social__icon" />
+							</a>
+						</li>
+						<li className="social__item">
+							<a
+								href="mailto:karenokonkwo29@gmail.com"
+								className="social__link"
+							>
+								<EmailIcon className="social__icon" />
+							</a>
+						</li>
+						<li className="social__item">
+							<a href="https://www.twitter.com/" className="social__link">
+								<TwitterIcon className="social__icon" />
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

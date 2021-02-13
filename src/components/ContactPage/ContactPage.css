@@ -1,0 +1,93 @@
+.contact-page {
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+}
+
+.contact-page__header {
+    margin-bottom: 30px;
+}
+
+.contact-page__heading {
+    margin: 0;
+    color: #AF5C3B;
+}
+
+.contact-page__heading--main {
+    font-family: 'Merienda One', cursive;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contact-page__subheading {
+    margin-top: 0;
+}
+
+.contact-page__content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-page__content-left {
+    margin-right: 20px;
+    width: 30%;
+}
+
+.contact-page__content-right {
+    width: 60%;
+}
+
+.contact-page__input {
+    background-color: rgba(236, 179, 156, 0.2);
+    border: none;
+    height: 60px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    font-family: inherit;
+    width: calc(50% - 20px);
+}
+
+.contact-page__input--full {
+    width: calc(100% - 20px);
+}
+
+.contact-page__textarea {
+    height: 120px;
+    width: calc(100% - 20px);
+    resize: none;
+}
+
+.contact-page__link {
+    color: #AF5C3B;
+}
+
+.contact-page__send-btn {
+    color: white;
+    background-color: #AF5C3B;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 20px 0 0;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.contact-page .social {
+    display: flex;
+}
+
+.contact-page .social__icon {
+    margin-right: 10px;
+}
+
+.contact-page .social__link {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}

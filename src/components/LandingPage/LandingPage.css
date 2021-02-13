@@ -5,6 +5,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .landing-page__overlay {
@@ -14,4 +16,95 @@
     left: 0;
     right: 0;
     background-color: rgba(155, 59, 4, 0.7);
+    z-index: 0;
+}
+
+.landing-page>*:not(.landing-page__overlay) {
+    position: relative;
+    z-index: 200;
+}
+
+.landing-page__logo {
+    width: 120px;
+    padding: 20px;
+}
+
+.landing-page__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.landing-page__text-cont {
+    width: 55%;
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+
+.landing-page__name {
+    font-family: 'Noticia Text', serif;
+    font-family: 'Righteous', cursive;
+    font-family: 'Newsreader', serif;
+    font-family: 'Cantora One', sans-serif;
+    font-family: 'Merienda One', cursive;
+}
+
+.landing-page__name {
+    font-size: 4em;
+    margin-left: -2px;
+    margin-bottom: 20px;
+}
+
+.landing-page__role {
+    font-size: 1.9em;
+}
+
+.landing-page__cursor {
+    font-size: 1.9em;
+}
+
+.landing-page__nav {
+    margin-top: 20px;
+}
+
+.landing-page__nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.landing-page__nav-item {
+    margin: 15px;
+    margin-left: 0;
+}
+
+.landing-page__nav-link {
+    color: white;
+    position: relative;
+    font-size: 1.1em;
+}
+
+.landing-page__nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 70%;
+    height: .2em;
+    border-radius: 5px;
+    pointer-events: none;
+    transform: translate3d(-100%, 0, 0) translate3d(-1px, 0, 0);
+    transition: transform 0.7s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.landing-page__nav-link:hover::after, .landing-page__nav-link--active::after {
+    transform: translate3d(0, 0, 0);
+    background: #faa84b;
 }

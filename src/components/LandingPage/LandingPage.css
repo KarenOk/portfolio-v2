@@ -43,6 +43,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .landing-page__menu-icon {
@@ -99,6 +100,14 @@
 .landing-page__nav-item {
     margin: 15px;
     margin-left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.landing-page__nav-icon {
+    margin-right: 10px;
+    display: none;
 }
 
 .landing-page__nav-link {
@@ -126,6 +135,10 @@
     background: #faa84b;
 }
 
+.landing-page__nav-close {
+    display: none;
+}
+
 .landing-page .social {
     margin-top: 20px;
     display: flex;
@@ -135,26 +148,76 @@
     margin-right: 30px
 }
 
+.landing-page .social__link {
+    font-size: 0;
+}
+
 .landing-page .social__icon:hover {
     fill: #faa84b;
 }
 
 @media only screen and (max-width: 750px) {
-    .landing-page {
-        font-size: 0.8em;
-    }
     .landing-page__menu-icon {
         display: block;
     }
     .landing-page__nav {
-        display: none;
+        transform: translateX(2000px);
+        transition: transform 0.5s ease-in;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 20px;
+        background-color: #faa84b;
+    }
+    .landing-page__nav.show {
+        transform: translateX(0);
+    }
+    .landing-page__nav-list {
+        flex-direction: column;
+    }
+    .landing-page__nav-item {
+        justify-content: center;
+        width: 100%;
+    }
+    .landing-page__nav:hover .landing-page__nav-item {
+        justify-content: flex-end;
+        width: auto;
+    }
+    .landing-page__nav-icon {
+        display: block;
+    }
+    .landing-page__nav-link--active+.landing-page__nav-icon path, .landing-page__nav-link:hover+.landing-page__nav-icon path {
+        fill: red;
+    }
+    .landing-page__nav-link {
+        font-size: 0;
+    }
+    .landing-page__nav:hover .landing-page__nav-link {
+        font-size: 1.1em;
+    }
+    .landing-page__nav-link:hover::after, .landing-page__nav-link--active::after {
+        transform: translate3d(0, 0, 0);
+        background: red;
+    }
+    .landing-page__nav-close {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        right: 20%;
+        left: 20%;
+        margin: 0 auto;
+        border: none;
+        background-color: transparent;
     }
     .landing-page__name {
-        font-size: 3em;
+        font-size: 2.4em;
         margin-bottom: 10px;
     }
     .landing-page__role {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 

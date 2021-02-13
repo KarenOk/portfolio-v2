@@ -85,6 +85,7 @@ export const LinkedinIcon = ({
 
 export const MenuIcon = ({
 	fill = "currentColor",
+	stroke = "currentColor",
 	className,
 	width = 30,
 	height = 30,
@@ -92,7 +93,7 @@ export const MenuIcon = ({
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 24 46"
+			viewBox="0 0 24 24"
 			fill={fill}
 			className={className}
 			width={width}
@@ -100,11 +101,55 @@ export const MenuIcon = ({
 		>
 			<path
 				d="M4 6H20M4 12H12M4 18H20"
-				stroke={fill}
+				stroke={stroke}
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				stroke-width="2"
 			/>
+		</svg>
+	);
+};
+
+export const HomeIcon = ({
+	fill = "currentColor",
+	className,
+	width = 30,
+	height = 30,
+}) => {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 1024 1024"
+			className={className}
+			width={width}
+			height={height}
+		>
+			<path
+				d="M96 480c-9.6 0-19.2-3.2-25.6-12.8-12.8-12.8-9.6-35.2 3.2-44.8l377.6-310.4c35.2-25.6 86.4-25.6 118.4 0l377.6 307.2c12.8 9.6 16 32 3.2 44.8-12.8 12.8-32 16-44.8 3.2L531.2 166.4c-9.6-6.4-28.8-6.4-38.4 0L115.2 473.6c-6.4 6.4-12.8 6.4-19.2 6.4zM816 928H608c-19.2 0-32-12.8-32-32v-150.4c0-22.4-38.4-44.8-67.2-44.8-28.8 0-64 19.2-64 44.8V896c0 19.2-12.8 32-32 32H211.2C163.2 928 128 892.8 128 848V544c0-19.2 12.8-32 32-32s32 12.8 32 32v304c0 9.6 6.4 16 19.2 16H384v-118.4c0-64 67.2-108.8 128-108.8s131.2 44.8 131.2 108.8V864h176c9.6 0 16 0 16-19.2V544c0-19.2 12.8-32 32-32s32 12.8 32 32v304C896 896 864 928 816 928z"
+				fill={fill}
+			/>
+		</svg>
+	);
+};
+
+export const CloseCircleIcon = ({
+	fill = "currentColor",
+	className,
+	width = 30,
+	height = 30,
+}) => {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 1024 1024"
+			className={className}
+			width={width}
+			fill={fill}
+			height={height}
+		>
+			<path d="M512 960C264.97 960 64 759.03 64 512S264.97 64 512 64c247.04 0 448 200.97 448 448S759.04 960 512 960z m0-861.54C283.98 98.46 98.46 283.98 98.46 512S283.98 925.54 512 925.54 925.54 740.02 925.54 512 740.02 98.46 512 98.46z" />
+			<path d="M353.61 687.62c-4.41 0-8.82-1.68-12.18-5.05-6.73-6.73-6.73-17.63 0-24.37l316.78-316.78c6.73-6.73 17.63-6.73 24.37 0s6.73 17.63 0 24.37L365.79 682.57a17.14 17.14 0 0 1-12.18 5.05z" />
+			<path d="M670.39 687.62c-4.41 0-8.82-1.68-12.18-5.05L341.43 365.79c-6.73-6.73-6.73-17.63 0-24.37s17.63-6.73 24.37 0L682.58 658.2c6.73 6.73 6.73 17.63 0 24.37a17.18 17.18 0 0 1-12.19 5.05z" />
 		</svg>
 	);
 };

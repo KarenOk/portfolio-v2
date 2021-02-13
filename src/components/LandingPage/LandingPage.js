@@ -7,15 +7,18 @@ import Typewriter from "typewriter-effect";
 import {
 	EmailIcon,
 	GithubIcon,
+	HomeIcon,
 	LinkedinIcon,
 	MenuIcon,
 	TwitterIcon,
+	CloseCircleIcon,
 } from "../../images/icons/icons";
 
 const banners = [Banner1, Banner2];
 
 const LandingPage = () => {
 	const [banner, setBanner] = useState(0);
+	const [showNav, setShowNav] = useState(false);
 
 	useEffect(() => {
 		const timer = setTimeout(nextBanner, 3000);
@@ -42,13 +45,18 @@ const LandingPage = () => {
 						data={logo}
 						className="landing-page__logo"
 						type="image/svg+xml"
+						alt="Karen Okonkwo"
 					/>
 				</a>
-				<button aria-label="Menu" className="landing-page__menu-btn">
+				<button
+					aria-label="Open menu"
+					className="landing-page__menu-btn"
+					onClick={() => setShowNav(true)}
+				>
 					<MenuIcon
 						className="landing-page__menu-icon"
 						height={60}
-						fill="white"
+						stroke="white"
 					/>
 				</button>
 			</header>
@@ -68,7 +76,7 @@ const LandingPage = () => {
 							}}
 						/>
 					</section>
-					<nav className="landing-page__nav">
+					<nav className={`landing-page__nav ${showNav ? "show" : ""}`}>
 						<ul className="landing-page__nav-list">
 							<li className="landing-page__nav-item">
 								<a
@@ -77,28 +85,60 @@ const LandingPage = () => {
 								>
 									Home
 								</a>
+								<HomeIcon
+									fill="white"
+									width={20}
+									className="landing-page__nav-icon"
+								/>
 							</li>
 							<li className="landing-page__nav-item">
 								<a href="#!" className="landing-page__nav-link">
 									About
 								</a>
+								<HomeIcon
+									fill="white"
+									width={20}
+									className="landing-page__nav-icon"
+								/>
 							</li>
 							<li className="landing-page__nav-item">
 								<a href="#!" className="landing-page__nav-link">
 									Resume
 								</a>
+								<HomeIcon
+									fill="white"
+									width={20}
+									className="landing-page__nav-icon"
+								/>
 							</li>
 							<li className="landing-page__nav-item">
 								<a href="#!" className="landing-page__nav-link">
 									Portfolio
 								</a>
+								<HomeIcon
+									fill="white"
+									width={20}
+									className="landing-page__nav-icon"
+								/>
 							</li>
 							<li className="landing-page__nav-item">
 								<a href="#!" className="landing-page__nav-link">
 									Contact
 								</a>
+								<HomeIcon
+									fill="white"
+									width={20}
+									className="landing-page__nav-icon"
+								/>
 							</li>
 						</ul>
+						<button
+							className="landing-page__nav-close"
+							aria-label="Close menu"
+							onClick={() => setShowNav(false)}
+						>
+							<CloseCircleIcon width={40} fill="white" />
+						</button>
 					</nav>
 
 					<ul className="social">
@@ -107,6 +147,7 @@ const LandingPage = () => {
 								href="https://github.com/KarenOk"
 								className="social__link social__link--active"
 							>
+								Github
 								<GithubIcon className="social__icon" />
 							</a>
 						</li>
@@ -115,6 +156,7 @@ const LandingPage = () => {
 								href="https://www.linkedin.com/in/karenokonkwo/"
 								className="social__link"
 							>
+								LinkedIn
 								<LinkedinIcon className="social__icon" />
 							</a>
 						</li>
@@ -123,11 +165,13 @@ const LandingPage = () => {
 								href="mailto:karenokonkwo29@gmail.com"
 								className="social__link"
 							>
+								Email
 								<EmailIcon className="social__icon" />
 							</a>
 						</li>
 						<li className="social__item">
 							<a href="https://www.twitter.com/" className="social__link">
+								Twitter
 								<TwitterIcon className="social__icon" />
 							</a>
 						</li>

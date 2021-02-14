@@ -1,0 +1,78 @@
+.portfolio-page .rodal-mask {
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.portfolio-page .rodal-dialog {
+    border-radius: 15px;
+    color: white;
+    background: #AF5C3B;
+    width: 90% !important;
+    max-width: 500px !important;
+    overflow-y: auto;
+    height: 500px !important;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.portfolio-page .rodal-close {
+    right: 30px;
+}
+
+.portfolio-page .rodal-close::before, .portfolio-page .rodal-close::after {
+    width: 200%;
+    background: white;
+}
+
+.portfolio-page .rodal-close:hover::before, .portfolio-page .rodal-close:hover::after {
+    background: white;
+}
+
+.modal__img-wrapper {
+    width: 100%;
+}
+
+.modal__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.modal__heading {
+    font-size: 1.6em;
+}
+
+.modal__summary {
+    color: rgb(236, 236, 236);
+    line-height: 25px;
+}
+
+.modal__link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: black;
+    width: 180px;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.modal__link--github {
+    background: black;
+}
+
+.modal__link--live {
+    background: rgb(26, 158, 26);
+}
+
+.modal__link-icon {
+    margin-right: 5px;
+}

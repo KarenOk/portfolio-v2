@@ -1,6 +1,5 @@
 .contact-page {
     width: 90%;
-    min-height: calc(100vh - 120px);
     overflow-y: auto;
     background-color: white;
     display: flex;
@@ -99,10 +98,6 @@
     display: flex;
     align-items: center;
     margin-right: 10px;
-}
-
-.contact-page .social__link:hover {
-    color: #AF5C3B;
 }
 
 .contact-page .social__icon {

@@ -112,6 +112,7 @@
     padding: 20px;
     background-color: #faa84b;
     z-index: 2000;
+    overflow-y: auto;
   }
   .app__nav.show {
     transform: translateX(0);
@@ -123,10 +124,16 @@
   .app__nav-item {
     justify-content: center;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .app__nav:hover .app__nav-item {
     justify-content: flex-end;
     width: auto;
+  }
+  /* Fix for shifted resume icon */
+  .app__nav:hover .app__nav-item:nth-of-type(3) .app__nav-icon {
+    margin-left: -5px;
   }
   .app__nav-icon {
     display: block;
@@ -147,11 +154,8 @@
   .app__nav-close {
     cursor: pointer;
     display: block;
-    position: absolute;
-    bottom: 30px;
-    right: 20%;
-    left: 20%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 10px 60px auto;
     border: none;
     background-color: transparent;
   }

@@ -72,6 +72,13 @@ function App() {
 						<MenuIcon className="app__menu-icon" height={60} stroke="white" />
 					</button>
 					<nav className={`app__nav ${showNav ? "show" : ""}`}>
+						<button
+							className="app__nav-close"
+							aria-label="Close menu"
+							onClick={() => setShowNav(false)}
+						>
+							<CloseCircleIcon width={40} fill="white" />
+						</button>
 						<ul className="app__nav-list">
 							<li className="app__nav-item">
 								<NavLink
@@ -137,13 +144,6 @@ function App() {
 								/>
 							</li>
 						</ul>
-						<button
-							className="app__nav-close"
-							aria-label="Close menu"
-							onClick={() => setShowNav(false)}
-						>
-							<CloseCircleIcon width={40} fill="white" />
-						</button>
 					</nav>
 				</header>
 

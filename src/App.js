@@ -61,7 +61,7 @@ function App() {
 							data={logo}
 							className="app__logo"
 							type="image/svg+xml"
-							alt="Karen Okonkwo"
+							aria-label="Karen Okonkwo"
 						/>
 					</a>
 					<button

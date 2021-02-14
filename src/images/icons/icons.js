@@ -8,6 +8,8 @@ export const EmailIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			viewBox="0 0 1024 1024"
 			version="1.1"
 			xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +31,8 @@ export const GithubIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 50 50"
 			fill={fill}
@@ -50,6 +54,8 @@ export const TwitterIcon = ({
 	return (
 		<>
 			<svg
+				role="img"
+				aria-label=""
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 48 48"
 				fill={fill}
@@ -71,6 +77,8 @@ export const LinkedinIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 26 26"
 			fill={fill}
@@ -92,6 +100,8 @@ export const MenuIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 24 24"
 			fill={fill}
@@ -118,6 +128,8 @@ export const HomeIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 1024 1024"
 			className={className}
@@ -140,6 +152,8 @@ export const CloseCircleIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 1024 1024"
 			className={className}
@@ -162,6 +176,8 @@ export const ResumeIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 1024 1024"
 			className={className}
@@ -184,6 +200,8 @@ export const ContactIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 1024 1024"
 			className={className}
@@ -207,6 +225,8 @@ export const PortfolioIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 1186 1024"
 			className={className}
@@ -229,6 +249,8 @@ export const AboutIcon = ({
 }) => {
 	return (
 		<svg
+			role="img"
+			aria-label=""
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 1186 1024"
 			className={className}

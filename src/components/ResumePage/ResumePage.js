@@ -27,7 +27,9 @@ const ResumePage = () => {
 				<div className="resume-page__content">
 					<div className="resume-page__content-left">
 						<h2 className="resume-page__heading">Work Experience</h2>
-						<p className="resume-page__subheading--body">PREVIOUS JOBS</p>
+						<p className="resume-page__subheading--body">
+							PRESENT & PREVIOUS JOBS
+						</p>
 					</div>
 					<div className="resume-page__content-right">
 						<div class="work-wrapper">

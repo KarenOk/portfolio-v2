@@ -14,13 +14,13 @@
         }, {
             "degree": "Front-End Developer Nanodegree",
             "school": "Udacity, Inc.",
-            "timeline": {"from": "Nov 2015", "to": "Jan 2020"},
+            "timeline": {"from": "May 2018", "to": "Nov 2018"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
             "degree": "Full-Stack Developer Nanodegree",
             "school": "Udacity, Inc.",
-            "timeline": {"from": "May 2018", "to": "Nov 2020"},
+            "timeline": {"from": "May 2020", "to": "Sept 2020"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
     ], 
@@ -29,7 +29,7 @@
             "role": "Front-End Engineer",
             "location": "Lagos, Nigeria",
             "company": "Softcom Africa",
-            "timeline": {"from": "May 2015", "to": "Present"},
+            "timeline": {"from": "May 2020", "to": "Present"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }, {
             "role": "Freelancer",
@@ -41,13 +41,13 @@
             "role": "Software Engineer Intern",
             "location": "Lagos, Nigeria",
             "company": "GRIT Systems Engineering Ltd.",
-            "timeline": {"from": "June 2018", "to": "Dec 2019"},
+            "timeline": {"from": "June 2018", "to": "Dec 2018"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },  {
             "role": "Intern",
             "location": "Lagos, Nigeria",
             "company": "Eko Konnect Research and Education Initiative",
-            "timeline": {"from": "June 2018", "to": "Dec 2019"},
+            "timeline": {"from": "Aug 2018", "to": "Sept 2018"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
     ]

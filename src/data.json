@@ -5,22 +5,20 @@
         "twitter": "https://twitter.com",
         "linkedIn": "https://www.linkedin.com/in/karenokonkwo/"
     },
-    "education":[
-        {
-            "degree": "BSc. in Computer Engineering",
-            "school": "University of Lagos, Nigeria.",
-            "timeline": {"from": "Nov 2015", "to": "Jan 2020"},
+    "education":[ {
+            "degree": "Full-Stack Developer Nanodegree",
+            "school": "Udacity, Inc.",
+            "timeline": {"from": "May 2020", "to": "Sept 2020"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }, {
             "degree": "Front-End Developer Nanodegree",
             "school": "Udacity, Inc.",
             "timeline": {"from": "May 2018", "to": "Nov 2018"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "degree": "Full-Stack Developer Nanodegree",
-            "school": "Udacity, Inc.",
-            "timeline": {"from": "May 2020", "to": "Sept 2020"},
+        }, {
+            "degree": "BSc. in Computer Engineering",
+            "school": "University of Lagos, Nigeria.",
+            "timeline": {"from": "Nov 2015", "to": "Jan 2020"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
     ], 

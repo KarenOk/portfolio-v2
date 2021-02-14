@@ -24,6 +24,7 @@ import {
 import LandingPage from "./components/LandingPage/LandingPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ResumePage from "./components/ResumePage/ResumePage";
+import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 
 // const banners = [Banner1, Banner2];
 const banners = [
@@ -148,6 +149,7 @@ function App() {
 				</header>
 
 				<Switch>
+					<Route exact path="/portfolio" component={PortfolioPage} />
 					<Route exact path="/contact" component={ContactPage} />
 					<Route exact path="/resume" component={ResumePage} />
 					<Route exact path="/" component={LandingPage} />

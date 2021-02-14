@@ -11,7 +11,15 @@ import { ToastsContainer, ToastsStore } from "react-toasts";
 import logo from "./logos/logo6 white animated.svg";
 import Banner1 from "./images/banner 1.jpeg";
 import Banner2 from "./images/banner 2.jpeg";
-import { HomeIcon, MenuIcon, CloseCircleIcon } from "./images/icons/icons";
+import {
+	MenuIcon,
+	CloseCircleIcon,
+	HomeIcon,
+	AboutIcon,
+	ResumeIcon,
+	PortfolioIcon,
+	ContactIcon,
+} from "./images/icons/icons";
 
 import LandingPage from "./components/LandingPage/LandingPage";
 import ContactPage from "./components/ContactPage/ContactPage";
@@ -74,7 +82,7 @@ function App() {
 								>
 									Home
 								</NavLink>
-								<HomeIcon fill="white" width={20} className="app__nav-icon" />
+								<HomeIcon fill="white" width={25} className="app__nav-icon" />
 							</li>
 							<li className="app__nav-item">
 								<NavLink
@@ -85,7 +93,7 @@ function App() {
 								>
 									About
 								</NavLink>
-								<HomeIcon fill="white" width={20} className="app__nav-icon" />
+								<AboutIcon fill="white" width={25} className="app__nav-icon" />
 							</li>
 							<li className="app__nav-item">
 								<NavLink
@@ -96,7 +104,7 @@ function App() {
 								>
 									Resume
 								</NavLink>
-								<HomeIcon fill="white" width={20} className="app__nav-icon" />
+								<ResumeIcon fill="white" width={30} className="app__nav-icon" />
 							</li>
 							<li className="app__nav-item">
 								<NavLink
@@ -107,7 +115,11 @@ function App() {
 								>
 									Portfolio
 								</NavLink>
-								<HomeIcon fill="white" width={20} className="app__nav-icon" />
+								<PortfolioIcon
+									fill="white"
+									width={20}
+									className="app__nav-icon"
+								/>
 							</li>
 							<li className="app__nav-item">
 								<NavLink
@@ -118,7 +130,11 @@ function App() {
 								>
 									Contact
 								</NavLink>
-								<HomeIcon fill="white" width={20} className="app__nav-icon" />
+								<ContactIcon
+									fill="white"
+									width={25}
+									className="app__nav-icon"
+								/>
 							</li>
 						</ul>
 						<button

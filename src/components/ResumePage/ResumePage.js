@@ -1,6 +1,16 @@
 import React from "react";
 import "./ResumePage.css";
 import data from "../../data.json";
+import javascript from "../../images/tech/javascript.svg";
+import git from "../../images/tech/git.svg";
+import python from "../../images/tech/python.svg";
+import linux from "../../images/tech/linux.png";
+import sql from "../../images/tech/sql.svg";
+import react from "../../images/tech/react.svg";
+import nodejs from "../../images/tech/nodejs.svg";
+import html5 from "../../images/tech/html5.svg";
+import css3 from "../../images/tech/css3.svg";
+import flask from "../../images/tech/flask.svg";
 
 const ResumePage = () => {
 	return (
@@ -34,14 +44,14 @@ const ResumePage = () => {
 						</div>
 					</div>
 				</div>
-
+				{/* 
 				<div className="resume-page__content">
 					<div className="resume-page__content-left">
 						<h2 className="resume-page__heading">Work Experience</h2>
 						<p className="resume-page__subheading--body">PREVIOUS JOBS</p>
 					</div>
 					<div className="resume-page__content-right"></div>
-				</div>
+				</div> */}
 
 				<div className="resume-page__content">
 					<div className="resume-page__content-left">
@@ -50,7 +60,34 @@ const ResumePage = () => {
 							TOOLS & TECHNOLOGIES
 						</p>
 					</div>
-					<div className="resume-page__content-right"></div>
+					<div className="resume-page__content-right">
+						{/* 
+						JavaScript,
+						ReactJS,
+						NodeJS,
+						Python,
+						Flask,
+						Linux,
+						HTML,
+						CSS,
+						Git,
+						SQL
+						
+						
+						*/}
+						<div className="tech">
+							<img src={javascript} alt="javascript" className="tech__logo" />
+							<img src={react} alt="React JS" className="tech__logo" />
+							<img src={python} alt="Python" className="tech__logo" />
+							<img src={flask} alt="Flask" className="tech__logo" />
+							<img src={nodejs} alt="NodeJS" className="tech__logo" />
+							<img src={sql} alt="SQL" className="tech__logo" />
+							<img src={html5} alt="HTML5" className="tech__logo" />
+							<img src={css3} alt="CSS3" className="tech__logo" />
+							<img src={git} alt="Git" className="tech__logo" />
+							<img src={linux} alt="Linux" className="tech__logo" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -39,7 +39,7 @@
 .resume-page__content {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .resume-page__content:first-of-type {
@@ -107,6 +107,17 @@
     z-index: 1;
     box-shadow: 0 0 0 8px rgba(250, 168, 75, 0.3);
     background: #AF5C3B;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tech__logo {
+    width: 45px;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 1200px) {

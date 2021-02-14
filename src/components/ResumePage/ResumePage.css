@@ -57,6 +57,31 @@
     position: relative;
 }
 
+.work {
+    margin-bottom: 30px;
+}
+
+.work__timeline {
+    color: #AF5C3B;
+    font-size: 1.1em;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.work__role {
+    font-size: 1.3em;
+    color: black;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.work__company {
+    color: #333;
+    font-size: 1em;
+    margin: 0;
+    margin-top: 3px;
+}
+
 .education-wrapper::after {
     content: '';
     position: absolute;

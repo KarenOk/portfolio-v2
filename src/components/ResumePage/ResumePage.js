@@ -26,6 +26,27 @@ const ResumePage = () => {
 			<div className="resume-page__body">
 				<div className="resume-page__content">
 					<div className="resume-page__content-left">
+						<h2 className="resume-page__heading">Work Experience</h2>
+						<p className="resume-page__subheading--body">PREVIOUS JOBS</p>
+					</div>
+					<div className="resume-page__content-right">
+						<div class="work-wrapper">
+							{data.work.map((work, i) => (
+								<div class="work" key={i}>
+									<p className="work__timeline">
+										{work.timeline.from} - {work.timeline.to}
+									</p>
+									<h3 className="work__role">{work.role}</h3>
+									<p className="work__company">{work.company}</p>
+									<p className="work__summary">{work.summary} </p>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+
+				<div className="resume-page__content">
+					<div className="resume-page__content-left">
 						<h2 className="resume-page__heading">Education</h2>
 						<p className="resume-page__subheading--body">ACADEMIC CAREER</p>
 					</div>
@@ -44,14 +65,6 @@ const ResumePage = () => {
 						</div>
 					</div>
 				</div>
-				{/* 
-				<div className="resume-page__content">
-					<div className="resume-page__content-left">
-						<h2 className="resume-page__heading">Work Experience</h2>
-						<p className="resume-page__subheading--body">PREVIOUS JOBS</p>
-					</div>
-					<div className="resume-page__content-right"></div>
-				</div> */}
 
 				<div className="resume-page__content">
 					<div className="resume-page__content-left">

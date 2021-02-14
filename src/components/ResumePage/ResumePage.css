@@ -1,0 +1,137 @@
+.resume-page {
+    width: 90%;
+    overflow-y: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    margin: 0 auto 40px;
+    max-width: 1400px;
+}
+
+.resume-page__header {
+    margin-bottom: 30px;
+}
+
+.resume-page__heading {
+    margin: 0;
+    /* color: #FAA84B; */
+}
+
+.resume-page__heading--main {
+    color: #AF5C3B;
+    font-family: 'Merienda One', cursive;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.resume-page__subheading {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.resume-page__subheading--body {
+    color: #777;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.resume-page__content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.resume-page__content:first-of-type {
+    flex-shrink: 0;
+}
+
+.resume-page__content-left {
+    margin-right: 20px;
+    width: calc(35% - 20px);
+    max-width: 350px;
+}
+
+.resume-page__content-right {
+    width: 65%;
+    position: relative;
+}
+
+.education-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: -51px;
+    width: 2px;
+    background: #ccc;
+}
+
+.education {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.education__degree {
+    margin: -10px 0 5px;
+    color: #AF5C3B;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.education__school {
+    font-style: italic;
+    margin: 0;
+}
+
+.education__timeline {
+    display: inline-block;
+    background: rgba(175, 92, 59, 0.2);
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #333
+}
+
+.education__summary::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -58px;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 0 0 0 8px rgba(250, 168, 75, 0.3);
+    background: #AF5C3B;
+}
+
+@media only screen and (max-width: 1200px) {
+    .resume-page {
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .resume-page__content {
+        flex-direction: column;
+    }
+    .resume-page__content-left, .resume-page__content-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .resume-page {
+        padding: 40px 20px;
+    }
+    .resume-page__heading--main {
+        font-size: 2.3em;
+    }
+    .resume-page__subheading {
+        font-size: 1.1em;
+    }
+}

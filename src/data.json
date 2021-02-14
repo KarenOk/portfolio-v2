@@ -4,5 +4,24 @@
         "github": "https://github.com/KarenOk",
         "twitter": "https://twitter.com",
         "linkedIn": "https://www.linkedin.com/in/karenokonkwo/"
-    }
+    },
+    "education":[
+        {
+            "degree": "BSc. in Computer Engineering",
+            "school": "University of Lagos, Nigeria.",
+            "timeline": {"from": "November 2015", "to": "January 2020"},
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }, {
+            "degree": "Front-End Developer Nanodegree",
+            "school": "Udacity, Inc.",
+            "timeline": {"from": "November 2015", "to": "January 2020"},
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "degree": "Full-Stack Developer Nanodegree",
+            "school": "Udacity, Inc.",
+            "timeline": {"from": "May 2018", "to": "November 2020"},
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+    ]
 }

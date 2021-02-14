@@ -15,6 +15,7 @@ import { HomeIcon, MenuIcon, CloseCircleIcon } from "./images/icons/icons";
 
 import LandingPage from "./components/LandingPage/LandingPage";
 import ContactPage from "./components/ContactPage/ContactPage";
+import ResumePage from "./components/ResumePage/ResumePage";
 
 // const banners = [Banner1, Banner2];
 const banners = [
@@ -132,6 +133,7 @@ function App() {
 
 				<Switch>
 					<Route exact path="/contact" component={ContactPage} />
+					<Route exact path="/resume" component={ResumePage} />
 					<Route exact path="/" component={LandingPage} />
 					<Route render={() => <Redirect to="/" />} />
 				</Switch>

@@ -31,7 +31,7 @@ const ResumePage = () => {
 					</div>
 					<div className="resume-page__content-right">
 						<div class="education-wrapper">
-							{data.education.map((edu, i) => (
+							{data.education.reverse().map((edu, i) => (
 								<div class="education" key={i}>
 									<h3 className="education__degree">{edu.degree}</h3>
 									<p className="education__school">{edu.school}</p>

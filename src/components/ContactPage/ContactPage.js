@@ -6,6 +6,7 @@ import {
 	LinkedinIcon,
 	TwitterIcon,
 } from "../../images/icons/icons";
+import data from "../../data.json";
 
 const ContactPage = () => {
 	const [formData, setFormData] = useState({
@@ -74,7 +75,7 @@ const ContactPage = () => {
 						<p>
 							Don't like forms? Send me an{" "}
 							<a
-								href="mailto:karenokonkwo29@gmail.com"
+								href={"mailto:" + data.social.email}
 								className="contact-page__link"
 							>
 								email
@@ -138,24 +139,21 @@ const ContactPage = () => {
 						<ul className="social">
 							<li className="social__item">
 								<a
-									href="https://github.com/KarenOk"
+									href={data.social.github}
 									className="social__link social__link--active"
 								>
-									<GithubIcon className="social__icon" />
+									<GithubIcon className="social__icon" fill="black" />
 									Github
 								</a>
 							</li>
 							<li className="social__item">
-								<a
-									href="https://www.linkedin.com/in/karenokonkwo/"
-									className="social__link"
-								>
+								<a href={data.social.linkedIn} className="social__link">
 									<LinkedinIcon className="social__icon" fill="#0072b1" />
 									LinkedIn
 								</a>
 							</li>
 							<li className="social__item">
-								<a href="https://www.twitter.com/" className="social__link">
+								<a href={data.social.twitter} className="social__link">
 									<TwitterIcon className="social__icon" fill="#1DA1F2" />
 									Twitter
 								</a>

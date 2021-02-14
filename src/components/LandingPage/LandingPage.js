@@ -8,6 +8,7 @@ import {
 	LinkedinIcon,
 	TwitterIcon,
 } from "../../images/icons/icons";
+import data from "../../data.json";
 
 const LandingPage = ({ isHome }) => {
 	return (
@@ -85,7 +86,7 @@ const LandingPage = ({ isHome }) => {
 				<ul className="social">
 					<li className="social__item">
 						<a
-							href="https://github.com/KarenOk"
+							href={data.social.github}
 							className="social__link social__link--active"
 						>
 							Github
@@ -93,22 +94,19 @@ const LandingPage = ({ isHome }) => {
 						</a>
 					</li>
 					<li className="social__item">
-						<a
-							href="https://www.linkedin.com/in/karenokonkwo/"
-							className="social__link"
-						>
+						<a href={data.social.linkedIn} className="social__link">
 							LinkedIn
 							<LinkedinIcon className="social__icon" />
 						</a>
 					</li>
 					<li className="social__item">
-						<a href="mailto:karenokonkwo29@gmail.com" className="social__link">
+						<a href={"mailto:" + data.social.email} className="social__link">
 							Email
 							<EmailIcon className="social__icon" />
 						</a>
 					</li>
 					<li className="social__item">
-						<a href="https://www.twitter.com/" className="social__link">
+						<a href={data.social.twitter} className="social__link">
 							Twitter
 							<TwitterIcon className="social__icon" />
 						</a>

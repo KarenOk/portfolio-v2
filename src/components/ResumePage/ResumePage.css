@@ -1,6 +1,7 @@
 .resume-page {
     width: 90%;
     overflow-y: auto;
+    height: calc(100vh - 125px);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -173,10 +174,19 @@
     .resume-page {
         padding: 40px 20px;
     }
+    .resume-page__heading {
+        font-size: 1.8em;
+    }
     .resume-page__heading--main {
         font-size: 2.3em;
     }
     .resume-page__subheading {
         font-size: 1.1em;
+    }
+    .education__degree, .work__role {
+        font-size: 1.1em;
+    }
+    .work__timeline {
+        font-size: 1em;
     }
 }

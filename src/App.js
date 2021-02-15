@@ -9,8 +9,6 @@ import {
 } from "react-router-dom";
 import { ToastsContainer, ToastsStore } from "react-toasts";
 import logo from "./logos/logo6 white animated.svg";
-import Banner1 from "./images/banner 1.jpeg";
-import Banner2 from "./images/banner 2.jpeg";
 import {
 	MenuIcon,
 	CloseCircleIcon,
@@ -26,7 +24,6 @@ import ContactPage from "./components/ContactPage/ContactPage";
 import ResumePage from "./components/ResumePage/ResumePage";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 
-// const banners = [Banner1, Banner2];
 const banners = [
 	"https://res.cloudinary.com/karso/image/upload/v1613217031/Portfolio/banner_1_jqcqno.jpg",
 	"https://res.cloudinary.com/karso/image/upload/v1613217032/Portfolio/banner_2_olqefy.jpg",

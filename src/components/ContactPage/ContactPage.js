@@ -9,6 +9,7 @@ import {
 import data from "../../data.json";
 
 const ContactPage = () => {
+	const [loading, setLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -22,6 +23,7 @@ const ContactPage = () => {
 
 	const onSubmit = async (e) => {
 		e.preventDefault();
+		setLoading(true);
 		try {
 			const res = await fetch("https://formspree.io/f/xdopvkjw", {
 				method: "POST",
@@ -54,6 +56,7 @@ const ContactPage = () => {
 			);
 			console.error(err);
 		}
+		setLoading(false);
 	};
 
 	return (
@@ -124,7 +127,9 @@ const ContactPage = () => {
 							></textarea>
 
 							<div style={{ textAlign: "right" }}>
-								<button className="contact-page__send-btn">Send Message</button>
+								<button className="contact-page__send-btn" disabled={loading}>
+									{loading ? "Sending..." : "Send Message"}
+								</button>
 							</div>
 						</form>
 					</div>

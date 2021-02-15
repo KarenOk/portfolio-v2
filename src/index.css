@@ -29,6 +29,10 @@ ul {
   margin: 0;
 }
 
+button:disabled {
+  opacity: 0.7;
+}
+
 .toasts-container {
   bottom: 20px !important;
 }

@@ -91,16 +91,51 @@ const ResumePage = () => {
 						
 						*/}
 						<div className="tech">
-							<img src={javascript} alt="javascript" className="tech__logo" />
-							<img src={react} alt="React JS" className="tech__logo" />
-							<img src={python} alt="Python" className="tech__logo" />
-							<img src={flask} alt="Flask" className="tech__logo" />
-							<img src={nodejs} alt="NodeJS" className="tech__logo" />
-							<img src={sql} alt="SQL" className="tech__logo" />
-							<img src={html5} alt="HTML5" className="tech__logo" />
-							<img src={css3} alt="CSS3" className="tech__logo" />
-							<img src={git} alt="Git" className="tech__logo" />
-							<img src={linux} alt="Linux" className="tech__logo" />
+							<img
+								src={javascript}
+								alt="Javascript"
+								title="Javascript"
+								className="tech__logo"
+							/>
+							<img
+								src={react}
+								alt="React JS"
+								title="React JS"
+								className="tech__logo"
+							/>
+							<img
+								src={python}
+								alt="Python"
+								title="Python"
+								className="tech__logo"
+							/>
+							<img
+								src={flask}
+								alt="Flask"
+								title="Flask"
+								className="tech__logo"
+							/>
+							<img
+								src={nodejs}
+								alt="NodeJS"
+								title="NodeJS"
+								className="tech__logo"
+							/>
+							<img src={sql} alt="SQL" title="SQL" className="tech__logo" />
+							<img
+								src={html5}
+								alt="HTML5"
+								title="HTML5"
+								className="tech__logo"
+							/>
+							<img src={css3} alt="CSS3" title="CSS3" className="tech__logo" />
+							<img src={git} alt="Git" title="Git" className="tech__logo" />
+							<img
+								src={linux}
+								alt="Linux"
+								title="Linux"
+								className="tech__logo"
+							/>
 						</div>
 					</div>
 				</div>

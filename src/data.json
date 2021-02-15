@@ -48,5 +48,83 @@
             "timeline": {"from": "Aug 2018", "to": "Sept 2018"},
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
-    ]
+    ],
+    "projects": [{
+        "name": "Anozie Stores",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/anozie-stores_whx38q.png",
+        "gif_url": "",
+        "live_url": "https://anoziestores.com",
+        "github_url": null
+    },{
+        "name": "Scribbles Blog",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/scribbles_arkyod.png",
+        "gif_url": "https://res.cloudinary.com/karso/image/upload/v1613348098/Portfolio/Project%20GIFs/scribbles_blog_yauonc.gif",
+        "live_url": "https://scribbles-blog.netlify.app",
+        "github_url": "https://github.com/KarenOk/Scribbles-Blog"
+    },{
+        "name": "Geraldines's Flourish Foods",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345203/Portfolio/Project%20Screenshots/gff_nb3ez1.png",
+        "gif_url": "",
+        "live_url": "https://gff.netlify.app",
+        "github_url": ""
+    },{
+        "name": "PasteIt",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/pasteit_xt8p0s.png",
+        "gif_url": "",
+        "live_url": "https://pasteit.netlify.app",
+        "github_url": "https://github.com/KarenOk/Paste-It"
+    },{
+        "name": "Nuvle",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/nuvle_o6jpbl.png",
+        "gif_url": "",
+        "live_url": "",
+        "github_url": ""
+    },{
+        "name": "Task-ager: The task manager",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/task-ager_mhfcn2.png",
+        "gif_url": "https://github.com/KarenOk/task-ager/raw/master/demo.gif",
+        "live_url": "https://task-ager.netlify.app",
+        "github_url": "https://github.com/KarenOk/task-ager"
+    },{
+        "name": "Portfolio V2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/portfolio_arzze1.png",
+        "gif_url": "",
+        "live_url": "https://karenokonkwo.netlify.app.com",
+        "github_url": "https://github.com/KarenOk/portfolio-v2"
+    },{
+        "name": "Fyyur",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/fyyur_djqyzv.png",
+        "gif_url": "https://github.com/KarenOk/Fyyur/raw/master/demo.gif",
+        "live_url": "",
+        "github_url": "https://github.com/KarenOk/Fyyur"
+    },{
+        "name": "Online Examination System",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/cbe_chc4yo.png",
+        "gif_url": "https://github.com/KarenOk/Computer-Based-Examination-Software/raw/master/assets/images/demo.gif",
+        "live_url": "http://cbe-test.atwebpages.com/views/login.php",
+        "github_url": "https://github.com/KarenOk/Computer-Based-Examination-Software"
+    },{
+        "name": "Contact Keeper",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/contact-keeper_l9hyd1.png",
+        "gif_url": "https://github.com/KarenOk/Contact-Keeper/raw/master/demo.gif",
+        "live_url": "http://contact-keeper.herokuapp.com/",
+        "github_url": "https://github.com/KarenOk/Contact-Keeper"
+    },{
+        "name": "Github Finder",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/github-finder_pfce9s.png",
+        "gif_url": "https://github.com/KarenOk/Github-Finder/raw/master/demo.gif",
+        "live_url": "https://find-users-github.netlify.app",
+        "github_url": "https://github.com/KarenOk/Github-Finder"
+    }]
 }

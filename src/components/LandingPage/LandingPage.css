@@ -9,16 +9,10 @@
 .landing-page__content {
     width: 55%;
     color: white;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Barlow', sans-serif;
     font-family: 'Karla', sans-serif;
 }
 
 .landing-page__name {
-    font-family: 'Noticia Text', serif;
-    font-family: 'Righteous', cursive;
-    font-family: 'Newsreader', serif;
     font-family: 'Cantora One', sans-serif;
     font-family: 'Merienda One', cursive;
 }

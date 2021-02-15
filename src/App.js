@@ -32,7 +32,7 @@ const banners = [
 function App() {
 	const [banner, setBanner] = useState(0);
 	const [showNav, setShowNav] = useState(false);
-	const isHome = true;
+	const [isHome, setIsHome] = useState(false);
 
 	useEffect(() => {
 		const timer = setTimeout(nextBanner, 3000);
@@ -69,7 +69,11 @@ function App() {
 					>
 						<MenuIcon className="app__menu-icon" height={60} stroke="white" />
 					</button>
-					<nav className={`app__nav ${showNav ? "show" : ""}`}>
+					<nav
+						className={`app__nav ${showNav ? "show" : ""} ${
+							isHome ? "app__nav--home" : ""
+						}`}
+					>
 						<button
 							className="app__nav-close"
 							aria-label="Close menu"
@@ -149,7 +153,11 @@ function App() {
 					<Route exact path="/portfolio" component={PortfolioPage} />
 					<Route exact path="/contact" component={ContactPage} />
 					<Route exact path="/resume" component={ResumePage} />
-					<Route exact path="/" component={LandingPage} />
+					<Route
+						exact
+						path="/"
+						render={(props) => <LandingPage {...props} setIsHome={setIsHome} />}
+					/>
 					<Route render={() => <Redirect to="/" />} />
 				</Switch>
 

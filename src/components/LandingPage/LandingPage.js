@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./LandingPage.css";
 import Typewriter from "typewriter-effect";
 import { NavLink } from "react-router-dom";
@@ -10,7 +10,14 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
-const LandingPage = ({ isHome }) => {
+const LandingPage = ({ setIsHome }) => {
+	useEffect(() => {
+		setIsHome(true);
+		return () => {
+			setIsHome(false);
+		};
+	}, []);
+
 	return (
 		<div className="landing-page">
 			<div className="landing-page__content">
@@ -28,7 +35,7 @@ const LandingPage = ({ isHome }) => {
 						}}
 					/>
 				</section>
-				<nav className={`landing-page__nav ${isHome ? "show" : ""}`}>
+				<nav className={`landing-page__nav`}>
 					<ul className="landing-page__nav-list">
 						<li className="landing-page__nav-item">
 							<NavLink

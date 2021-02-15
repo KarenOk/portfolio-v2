@@ -51,6 +51,10 @@
   display: none;
 }
 
+.app__nav--home {
+  display: none;
+}
+
 .app__nav-list {
   display: flex;
   margin-right: 20px;
@@ -116,6 +120,9 @@
   }
   .app__nav.show {
     transform: translateX(0);
+  }
+  .app__nav--home {
+    display: block;
   }
   .app__nav-list {
     flex-direction: column;

@@ -10,9 +10,10 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
-const LandingPage = ({ setIsHome }) => {
+const LandingPage = ({ setIsHome, closeNav }) => {
 	useEffect(() => {
 		setIsHome(true);
+		closeNav();
 		return () => {
 			setIsHome(false);
 		};

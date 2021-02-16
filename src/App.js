@@ -150,13 +150,37 @@ function App() {
 				</header>
 
 				<Switch>
-					<Route exact path="/portfolio" component={PortfolioPage} />
-					<Route exact path="/contact" component={ContactPage} />
-					<Route exact path="/resume" component={ResumePage} />
+					<Route
+						exact
+						path="/portfolio"
+						render={(props) => (
+							<PortfolioPage {...props} closeNav={() => setShowNav(false)} />
+						)}
+					/>
+					<Route
+						exact
+						path="/contact"
+						render={(props) => (
+							<ContactPage {...props} closeNav={() => setShowNav(false)} />
+						)}
+					/>
+					<Route
+						exact
+						path="/resume"
+						render={(props) => (
+							<ResumePage {...props} closeNav={() => setShowNav(false)} />
+						)}
+					/>
 					<Route
 						exact
 						path="/"
-						render={(props) => <LandingPage {...props} setIsHome={setIsHome} />}
+						render={(props) => (
+							<LandingPage
+								{...props}
+								setIsHome={setIsHome}
+								closeNav={() => setShowNav(false)}
+							/>
+						)}
 					/>
 					<Route render={() => <Redirect to="/" />} />
 				</Switch>

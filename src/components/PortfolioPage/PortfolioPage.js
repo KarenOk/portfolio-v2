@@ -4,11 +4,15 @@ import { AboutIcon, CloseIcon, ZoomIcon } from "../../images/icons/icons";
 import data from "../../data.json";
 import Modal from "../Modal/Modal";
 
-const PortfolioPage = () => {
+const PortfolioPage = ({ closeNav }) => {
 	const [showModal, setShowModal] = useState(false);
 	const [selectedImg, setSelectedImg] = useState(null);
 	const [selectedProject, setSelectedProject] = useState(null);
 	const [showFullscreen, setShowFullscreen] = useState(false);
+
+	useEffect(() => {
+		closeNav();
+	}, []);
 
 	useEffect(() => {
 		if (selectedImg) setShowFullscreen(true);

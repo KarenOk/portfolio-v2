@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ResumePage.css";
 import data from "../../data.json";
 import javascript from "../../images/tech/javascript.svg";
@@ -12,7 +12,11 @@ import html5 from "../../images/tech/html5.svg";
 import css3 from "../../images/tech/css3.svg";
 import flask from "../../images/tech/flask.svg";
 
-const ResumePage = () => {
+const ResumePage = ({ closeNav }) => {
+	useEffect(() => {
+		closeNav();
+	}, []);
+
 	return (
 		<section className="resume-page">
 			<header className="resume-page__header">

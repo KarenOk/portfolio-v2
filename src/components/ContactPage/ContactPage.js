@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ContactPage.css";
 import { ToastsStore } from "react-toasts";
 import {
@@ -8,7 +8,7 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
-const ContactPage = () => {
+const ContactPage = ({ closeNav }) => {
 	const [loading, setLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
@@ -16,6 +16,10 @@ const ContactPage = () => {
 		subject: "",
 		message: "",
 	});
+
+	useEffect(() => {
+		closeNav();
+	}, []);
 
 	const onChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });

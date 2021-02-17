@@ -20,6 +20,7 @@ import {
 } from "./images/icons/icons";
 
 import LandingPage from "./components/LandingPage/LandingPage";
+import AboutPage from "./components/AboutPage/AboutPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ResumePage from "./components/ResumePage/ResumePage";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
@@ -150,6 +151,13 @@ function App() {
 				</header>
 
 				<Switch>
+					<Route
+						exact
+						path="/about"
+						render={(props) => (
+							<AboutPage {...props} closeNav={() => setShowNav(false)} />
+						)}
+					/>
 					<Route
 						exact
 						path="/portfolio"

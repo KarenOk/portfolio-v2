@@ -1,0 +1,120 @@
+.about-page {
+    width: 90%;
+    overflow-y: auto;
+    height: calc(100vh - 125px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    margin: 0 auto 40px;
+    max-width: 1400px;
+}
+
+.about-page__heading {
+    margin: 0;
+    /* color: #FAA84B; */
+}
+
+.about-page__heading--main {
+    color: #AF5C3B;
+    font-family: 'Merienda One', cursive;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.about-page__subheading {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.about-page__subheading--body {
+    color: #777;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.about-page__content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.about-page__content:first-of-type {
+    flex-shrink: 0;
+}
+
+.about-page__content-left {
+    width: 50%;
+    position: relative;
+    margin-right: 20px;
+}
+
+.about-page__content-right {
+    width: 50%;
+}
+
+.about-page__text {
+    max-width: 500px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.about-page__link, .about-page__link:hover, .about-page__link:active {
+    color: #AF5C3B;
+}
+
+.about-page__list {
+    padding-left: 30px;
+}
+
+.about-page__list-item {
+    padding-left: 10px;
+    margin: 5px 0;
+    position: relative;
+    list-style-type: none;
+}
+
+.about-page__list-item:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -16px;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-image: url(../../images/icons/check2.svg);
+}
+
+.about-page__illustration {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-page {
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-page__content {
+        flex-direction: column;
+    }
+    .about-page__content-left, .about-page__content-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-page {
+        padding: 40px 20px;
+    }
+    .about-page__heading {
+        font-size: 1.8em;
+    }
+    .about-page__heading--main {
+        font-size: 2.3em;
+    }
+    .about-page__subheading {
+        font-size: 1.1em;
+    }
+}

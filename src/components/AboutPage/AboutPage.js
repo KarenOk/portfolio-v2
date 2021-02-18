@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./AboutPage.css";
 import { Link } from "react-router-dom";
-import data from "../../data.json";
 import illustration from "../../images/illustration.svg";
+import { HTMLIcon, CodeBracesIcon, WebIcon } from "../../images/icons/icons";
 
 const AboutPage = ({ closeNav }) => {
 	useEffect(() => {
@@ -22,7 +22,7 @@ const AboutPage = ({ closeNav }) => {
 					<div className="about-page__content-left">
 						<p className="about-page__text">Hi there! 👋</p>
 						<p className="about-page__text">
-							<strong> Who am I? </strong>
+							<strong className="about-page__text--bold"> Who am I? </strong>
 							<ul className="about-page__list">
 								<li className="about-page__list-item">
 									A Software Engineer with hands on experience developing
@@ -61,6 +61,38 @@ const AboutPage = ({ closeNav }) => {
 							alt=""
 							className="about-page__illustration"
 						/>
+					</div>
+				</div>
+				<div className="about-page__content">
+					<strong className="about-page__text--bold"> What I do? </strong>
+					<div className="about-page__services">
+						<a
+							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+							className="about-page__services-link"
+						>
+							<HTMLIcon className="about-page__services-icon" />
+							<span className="about-page__services-text">
+								Front-End Web Development
+							</span>
+						</a>
+						<a
+							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+							className="about-page__services-link"
+						>
+							<CodeBracesIcon className="about-page__services-icon" />
+							<span className="about-page__services-text">
+								Back-End / API Development
+							</span>
+						</a>
+						<a
+							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+							className="about-page__services-link"
+						>
+							<WebIcon className="about-page__services-icon" />
+							<span className="about-page__services-text">
+								Full-Stack Web Development
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>

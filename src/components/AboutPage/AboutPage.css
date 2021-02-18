@@ -36,11 +36,15 @@
 .about-page__content {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .about-page__content:first-of-type {
     flex-shrink: 0;
+}
+
+.about-page__content:last-of-type {
+    display: block;
 }
 
 .about-page__content-left {
@@ -56,7 +60,7 @@
 .about-page__text {
     max-width: 500px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .about-page__link, .about-page__link:hover, .about-page__link:active {
@@ -85,6 +89,34 @@
     background-image: url(../../images/icons/check2.svg);
 }
 
+.about-page__services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-page__services-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+    box-shadow: 0 5px 17px 2px rgba(0, 0, 0, 0.2);
+    margin: 20px 20px 0 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.about-page__services-link:hover {
+    background: #AF5C3B;
+    color: white;
+}
+
+.about-page__services-icon {
+    margin-bottom: 10px;
+}
+
 .about-page__illustration {
     width: 100%;
 }
@@ -99,7 +131,10 @@
     .about-page__content {
         flex-direction: column;
     }
-    .about-page__content-left, .about-page__content-right {
+    .about-page__content-left {
+        width: calc(100% - 20px);
+    }
+    .about-page__content-right {
         width: 100%;
     }
 }
@@ -116,5 +151,11 @@
     }
     .about-page__subheading {
         font-size: 1.1em;
+    }
+    .about-page__services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }

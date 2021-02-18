@@ -46,14 +46,6 @@ const AboutPage = ({ closeNav }) => {
 								</li>
 							</ul>
 						</p>
-
-						<p className="about-page__text">
-							I'm super excited you're here. Feel free to{" "}
-							<Link to="/contact" className="about-page__link">
-								reach out to me{" "}
-							</Link>
-							with any project ideas you have or to just say hello!
-						</p>
 					</div>
 					<div className="about-page__content-right">
 						<img
@@ -94,6 +86,14 @@ const AboutPage = ({ closeNav }) => {
 							</span>
 						</a>
 					</div>
+
+					<p className="about-page__text">
+						I'm super excited you're here. Feel free to{" "}
+						<Link to="/contact" className="about-page__link">
+							reach out to me{" "}
+						</Link>
+						with any project ideas you have or to just say hello!
+					</p>
 				</div>
 			</div>
 		</section>

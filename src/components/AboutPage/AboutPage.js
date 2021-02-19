@@ -15,12 +15,10 @@ const AboutPage = ({ closeNav }) => {
 				<h1 className="about-page__heading about-page__heading--main">
 					Meet Karen Okonkwo
 				</h1>
-				<p className="about-page__subheading">Get to know me.</p>
 			</header>
 			<div className="about-page__body">
 				<div className="about-page__content">
 					<div className="about-page__content-left">
-						<p className="about-page__text">Hi there! 👋</p>
 						<p className="about-page__text">
 							<strong className="about-page__text--bold"> Who am I? </strong>
 							<ul className="about-page__list">

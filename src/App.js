@@ -61,6 +61,7 @@ function App() {
 							className="app__logo"
 							type="image/svg+xml"
 							aria-label="Karen Okonkwo"
+							tabIndex="-1"
 						/>
 					</a>
 					<button

@@ -36,3 +36,7 @@ button:disabled {
 .toasts-container {
   bottom: 20px !important;
 }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

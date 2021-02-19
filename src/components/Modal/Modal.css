@@ -15,11 +15,11 @@
 }
 
 .portfolio-page .rodal-close {
-    right: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .portfolio-page .rodal-close::before, .portfolio-page .rodal-close::after {
-    width: 200%;
     background: white;
 }
 
@@ -29,6 +29,7 @@
 
 .modal__img-wrapper {
     width: 100%;
+    margin-top: 10px;
 }
 
 .modal__img {

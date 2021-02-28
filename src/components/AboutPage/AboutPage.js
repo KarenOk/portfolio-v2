@@ -58,6 +58,7 @@ const AboutPage = ({ closeNav }) => {
 					<div className="about-page__services">
 						<a
 							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+							target="_blank"
 							className="about-page__services-link"
 						>
 							<HTMLIcon className="about-page__services-icon" />
@@ -67,6 +68,7 @@ const AboutPage = ({ closeNav }) => {
 						</a>
 						<a
 							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+							target="_blank"
 							className="about-page__services-link"
 						>
 							<CodeBracesIcon className="about-page__services-icon" />
@@ -76,6 +78,7 @@ const AboutPage = ({ closeNav }) => {
 						</a>
 						<a
 							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+							target="_blank"
 							className="about-page__services-link"
 						>
 							<WebIcon className="about-page__services-icon" />

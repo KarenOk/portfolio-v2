@@ -12,7 +12,6 @@
 
 .about-page__heading {
     margin: 0;
-    /* color: #FAA84B; */
 }
 
 .about-page__heading--main {
@@ -23,7 +22,6 @@
 
 .about-page__content {
     display: flex;
-    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -31,24 +29,24 @@
     flex-shrink: 0;
 }
 
-.about-page__content:last-of-type {
-    display: block;
-}
-
 .about-page__content-left {
-    width: 50%;
+    width: 30%;
     position: relative;
     margin-right: 20px;
 }
 
 .about-page__content-right {
-    width: 50%;
+    width: 70%;
 }
 
 .about-page__text {
-    max-width: 500px;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-page__text--restricted {
+    max-width: 500px;
 }
 
 .about-page__link, .about-page__link:hover, .about-page__link:active {
@@ -104,10 +102,17 @@
 
 .about-page__services-icon {
     margin-bottom: 10px;
+    color: #AF5C3B
+}
+
+.about-page__services-link:hover .about-page__services-icon {
+    color: white;
 }
 
 .about-page__illustration {
     width: 100%;
+    max-width: 300px;
+    margin: 00 auto;
 }
 
 @media only screen and (max-width: 1200px) {

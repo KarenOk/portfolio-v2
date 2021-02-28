@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "./AboutPage.css";
 import { Link } from "react-router-dom";
-import illustration from "../../images/illustration.svg";
+import Lottie from "react-lottie";
+import animationData from "../../images/lotties/female.json";
 import { HTMLIcon, CodeBracesIcon, WebIcon } from "../../images/icons/icons";
 
 const AboutPage = ({ closeNav }) => {
@@ -19,7 +20,20 @@ const AboutPage = ({ closeNav }) => {
 			<div className="about-page__body">
 				<div className="about-page__content">
 					<div className="about-page__content-left">
-						<p className="about-page__text">
+						<Lottie
+							options={{
+								loop: true,
+								autoplay: true,
+								animationData: animationData,
+								rendererSettings: {
+									preserveAspectRatio: "xMidYMid slice",
+								},
+							}}
+							height="auto"
+						/>
+					</div>
+					<div className="about-page__content-right">
+						<p className="about-page__text about-page__text--restricted">
 							<strong className="about-page__text--bold"> Who am I? </strong>
 							<ul className="about-page__list">
 								<li className="about-page__list-item">
@@ -44,58 +58,51 @@ const AboutPage = ({ closeNav }) => {
 								</li>
 							</ul>
 						</p>
-					</div>
-					<div className="about-page__content-right">
-						<img
-							src={illustration}
-							alt=""
-							className="about-page__illustration"
-						/>
-					</div>
-				</div>
-				<div className="about-page__content">
-					<strong className="about-page__text--bold"> What I do? </strong>
-					<div className="about-page__services">
-						<a
-							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
-							target="_blank"
-							className="about-page__services-link"
-						>
-							<HTMLIcon className="about-page__services-icon" />
-							<span className="about-page__services-text">
-								Front-End Web Development
-							</span>
-						</a>
-						<a
-							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
-							target="_blank"
-							className="about-page__services-link"
-						>
-							<CodeBracesIcon className="about-page__services-icon" />
-							<span className="about-page__services-text">
-								Back-End / API Development
-							</span>
-						</a>
-						<a
-							href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
-							target="_blank"
-							className="about-page__services-link"
-						>
-							<WebIcon className="about-page__services-icon" />
-							<span className="about-page__services-text">
-								Full-Stack Web Development
-							</span>
-						</a>
-					</div>
+						<p className="about-page__text">
+							<strong className="about-page__text--bold"> What I do? </strong>
+							<div className="about-page__services">
+								<a
+									href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+									target="_blank"
+									className="about-page__services-link"
+								>
+									<HTMLIcon className="about-page__services-icon" />
+									<span className="about-page__services-text">
+										Front-End Web Development
+									</span>
+								</a>
+								<a
+									href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+									target="_blank"
+									className="about-page__services-link"
+								>
+									<CodeBracesIcon className="about-page__services-icon" />
+									<span className="about-page__services-text">
+										Back-End / API Development
+									</span>
+								</a>
+								<a
+									href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html"
+									target="_blank"
+									className="about-page__services-link"
+								>
+									<WebIcon className="about-page__services-icon" />
+									<span className="about-page__services-text">
+										Full-Stack Web Development
+									</span>
+								</a>
+							</div>
+						</p>
 
-					<p className="about-page__text">
-						I'm super excited you're here. Feel free to{" "}
-						<Link to="/contact" className="about-page__link">
-							reach out to me{" "}
-						</Link>
-						with any project ideas you have or to just say hello!
-					</p>
-				</div>
+						<p className="about-page__text about-page__text--restricted">
+							I'm super excited you're here. Feel free to{" "}
+							<Link to="/contact" className="about-page__link">
+								reach out to me{" "}
+							</Link>
+							with any project ideas you have or to just say hello!
+						</p>
+					</div>
+				</div>{" "}
 			</div>
 		</section>
 	);

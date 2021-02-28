@@ -67,6 +67,11 @@
     width: calc(100% - 20px);
 }
 
+.contact-page__input:focus, .contact-page__send-btn:focus {
+    outline: none;
+    box-shadow: 0 0 3pt 2pt #daae9d;
+}
+
 .contact-page__textarea {
     height: 150px;
     width: calc(100% - 20px);

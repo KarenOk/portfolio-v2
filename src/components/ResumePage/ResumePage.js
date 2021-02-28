@@ -36,9 +36,9 @@ const ResumePage = ({ closeNav }) => {
 						</p>
 					</div>
 					<div className="resume-page__content-right">
-						<div class="work-wrapper">
+						<div className="work-wrapper">
 							{data.work.map((work, i) => (
-								<div class="work" key={i}>
+								<div className="work" key={i}>
 									<p className="work__timeline">
 										{work.timeline.from} - {work.timeline.to}
 									</p>
@@ -57,9 +57,9 @@ const ResumePage = ({ closeNav }) => {
 						<p className="resume-page__subheading--body">ACADEMIC CAREER</p>
 					</div>
 					<div className="resume-page__content-right">
-						<div class="education-wrapper">
+						<div className="education-wrapper">
 							{data.education.map((edu, i) => (
-								<div class="education" key={i}>
+								<div className="education" key={i}>
 									<h3 className="education__degree">{edu.degree}</h3>
 									<p className="education__school">{edu.school}</p>
 									<p className="education__timeline">

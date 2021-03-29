@@ -8,6 +8,7 @@ import {
 	Redirect,
 } from "react-router-dom";
 import { ToastsContainer, ToastsStore } from "react-toasts";
+import ReactGA from "react-ga";
 import logo from "./logos/logo6 white animated.svg";
 import {
 	MenuIcon,
@@ -37,6 +38,10 @@ function App() {
 	const [showNav, setShowNav] = useState(false);
 	const [isHome, setIsHome] = useState(false);
 
+	useEffect(() => {
+		ReactGA.initialize("G-E6F6ZRS37H");
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
 	useEffect(() => {
 		const timer = setTimeout(nextBanner, 3000);
 

@@ -4,8 +4,9 @@ import "./PortfolioItem.css";
 import data from "../../data.json";
 import { GithubIcon, LiveIcon } from "../../images/icons/icons";
 
-const PortfolioItem = ({ closeNav }) => {
-	const project = data.projects[0];
+const PortfolioItem = ({ closeNav, match }) => {
+	const slug = match.params.slug;
+	const project = data.projects[slug];
 
 	useEffect(() => {
 		closeNav();

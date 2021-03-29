@@ -1,0 +1,106 @@
+.portfolio-item {
+    width: 90%;
+    overflow-y: auto;
+    height: calc(100vh - 125px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    margin: 0 auto 40px;
+    max-width: 1400px;
+}
+
+.portfolio-item__body {
+    display: flex;
+}
+
+.portfolio-item__path {
+    font-family: 'Karla', sans-serif;
+    margin-right: 5px;
+    font-size: 18px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.portfolio-item__path-separator {
+    margin: 0 7px;
+}
+
+.portfolio-item__path--link, .portfolio-item__path--link:active, .portfolio-item__path--link:hover {
+    color: #AF5C3B;
+    text-decoration: underline;
+}
+
+.portfolio-item__header {
+    margin-bottom: 80px;
+}
+
+.portfolio-item__img-wrapper {
+    width: 45%;
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item__content {
+    width: calc(55% - 40px);
+}
+
+.portfolio-item__heading {
+    font-size: 1.6em;
+    margin-top: 0;
+}
+
+.portfolio-item__summary {
+    line-height: 25px;
+}
+
+.portfolio-item__link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin: 20px;
+    margin-left: 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.portfolio-item__link--github, .portfolio-item__link--github:hover {
+    background: black;
+    color: white;
+}
+
+.portfolio-item__link--live, .portfolio-item__link--live:hover {
+    background: rgb(26, 158, 26);
+    color: white;
+}
+
+.portfolio-item__link-icon {
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .portfolio-item__body {
+        flex-direction: column;
+    }
+    .portfolio-item__img-wrapper {
+        width: calc(100% - 20px);
+    }
+    .portfolio-item__content {
+        width: 100%;
+    }
+}

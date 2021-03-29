@@ -23,6 +23,7 @@
 
 .app>*:not(.app__overlay) {
   position: relative;
+  border-radius: 5px;
 }
 
 .app__header {

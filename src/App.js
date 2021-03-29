@@ -24,6 +24,7 @@ import AboutPage from "./components/AboutPage/AboutPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ResumePage from "./components/ResumePage/ResumePage";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
+import PortfolioItem from "./components/PortfolioPage/PortfolioItem";
 
 const banners = [
 	"https://res.cloudinary.com/karso/image/upload/v1613217031/Portfolio/banner_1_jqcqno.jpg",
@@ -157,6 +158,13 @@ function App() {
 						path="/about"
 						render={(props) => (
 							<AboutPage {...props} closeNav={() => setShowNav(false)} />
+						)}
+					/>
+					<Route
+						exact
+						path="/portfolio/:slug"
+						render={(props) => (
+							<PortfolioItem {...props} closeNav={() => setShowNav(false)} />
 						)}
 					/>
 					<Route

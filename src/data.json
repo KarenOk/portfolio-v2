@@ -9,17 +9,17 @@
             "degree": "Full-Stack Developer Nanodegree",
             "school": "Udacity, Inc.",
             "timeline": {"from": "May 2020", "to": "Sept 2020"},
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "summary": "This nanodegree course extensively taught various technical skills needed to build database-backed APIs and web applications including:\n\n\t• SQL and Data Modelling for the Web\n\t• API Development and Documentation\n\t• Identity and Access Management\n\t• Server Deployment, Containerization and Testing\n\nFind the full syllabus here: https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044"
         }, {
             "degree": "Front-End Developer Nanodegree",
             "school": "Udacity, Inc.",
             "timeline": {"from": "May 2018", "to": "Nov 2018"},
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "summary": "This course taught comprehensively various technical skills important in frontend web development. Completed several projects encompassing the knowledge of:\n\n\t• HTML, CSS and JavaScript\n\t• Responsive Web Design\n\t• Object-Oriented Programming\n\t• Web Accessibility\n\t• Test-driven development\n\t• Working with APIs\n\t• Working with several frameworks (among others)\n"
         }, {
             "degree": "BSc. in Computer Engineering",
             "school": "University of Lagos, Nigeria.",
             "timeline": {"from": "Nov 2015", "to": "Jan 2020"},
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "summary": "• Graduated with First Class Honours. \n\n• Relevant Coursework: Software Engineering Fundamentals, Computer Programming, Computer Architecture, Algorithms and Data Structures, Systems Programming, Machine and Assembly Language Programming, Digital Electronics, Digital Computer Design, Microprocessors & Microcomputers, Database Management, Computer Networks, Information Theory & Coding, Numerical Methods in Engineering, Technical Communication."
         }
     ], 
     "work":[
@@ -28,25 +28,25 @@
             "location": "Lagos, Nigeria",
             "company": "Softcom Africa",
             "timeline": {"from": "May 2020", "to": "Present"},
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "summary": "• Currently working with the Eyowo team to build out web interfaces that help users interact with the product - which provides financial services to anyone with a phone number. \n• Worked on front-end applications to drive NPower - a Nigerian Federal Government programme that addresses the problem of youth unemployment in the country - alongside other disciplines including testing, design, and UI developers."
         }, {
             "role": "Freelancer",
             "location": "Lagos, Nigeria",
             "company": "Freelancer",
             "timeline": {"from": "2018", "to": "Present"},
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "summary": "• Architecting and developing fully functional, accessible and responsive web applications using a wide range of tools and technologies for various clients. \n• Services provided for these clients span across front-end development to full-stack application development. Checkout my portfolio to see some of these applications live."
         },  {
             "role": "Software Engineer Intern",
             "location": "Lagos, Nigeria",
             "company": "GRIT Systems Engineering Ltd.",
             "timeline": {"from": "June 2018", "to": "Dec 2018"},
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "summary": "• Worked with the software team to build software to support the company's hardware products. \n• Designed, developed and maintained the front-end application for the company's project using ReactJS, TypeScript and Material UI. \n• Developed web services for user and order management using Flask."
         },  {
             "role": "Intern",
             "location": "Lagos, Nigeria",
             "company": "Eko Konnect Research and Education Initiative",
             "timeline": {"from": "Aug 2018", "to": "Sept 2018"},
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "summary": "• Worked primarily with Linux (UBUNTU) as an operating system, learning about and unlocking its benefits and applications in everyday development."
         }
     ],
     "projects": [{

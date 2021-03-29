@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ContactPage.css";
 import { ToastsStore } from "react-toasts";
+import Mixpanel from "mixpanel-browser";
 import {
 	GithubIcon,
 	LinkedinIcon,
@@ -18,6 +19,7 @@ const ContactPage = ({ closeNav }) => {
 	});
 
 	useEffect(() => {
+		Mixpanel.track("Page visit", { page: "Contact" });
 		closeNav();
 	}, []);
 
@@ -28,6 +30,7 @@ const ContactPage = ({ closeNav }) => {
 	const onSubmit = async (e) => {
 		e.preventDefault();
 		setLoading(true);
+		Mixpanel.track("Contact Page Interaction", { action: "submit" });
 		try {
 			const res = await fetch("https://formspree.io/f/xdopvkjw", {
 				method: "POST",

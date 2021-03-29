@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import "./PortfolioPage.css";
 import { Link } from "react-router-dom";
+import Mixpanel from "mixpanel-browser";
 import { AboutIcon } from "../../images/icons/icons";
 import data from "../../data.json";
 
 const PortfolioPage = ({ closeNav }) => {
 	useEffect(() => {
+		Mixpanel.track("Page visit", { page: "Portfolio" });
 		closeNav();
 	}, []);
 

@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Mixpanel from "mixpanel-browser";
 import "./PortfolioItem.css";
 import data from "../../data.json";
 import { GithubIcon, LiveIcon } from "../../images/icons/icons";
@@ -10,6 +11,7 @@ const PortfolioItem = ({ closeNav, match }) => {
 
 	useEffect(() => {
 		closeNav();
+		Mixpanel.track("Portfolio Item Interaction", { project: project.names });
 	}, []);
 
 	return (

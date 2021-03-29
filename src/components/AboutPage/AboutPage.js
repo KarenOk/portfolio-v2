@@ -2,11 +2,13 @@ import React, { useEffect } from "react";
 import "./AboutPage.css";
 import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
+import Mixpanel from "mixpanel-browser";
 import animationData from "../../images/lotties/female.json";
 import { HTMLIcon, CodeBracesIcon, WebIcon } from "../../images/icons/icons";
 
 const AboutPage = ({ closeNav }) => {
 	useEffect(() => {
+		Mixpanel.track("Page visit", { page: "About" });
 		closeNav();
 	}, []);
 

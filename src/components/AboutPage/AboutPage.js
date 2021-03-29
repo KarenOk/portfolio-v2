@@ -29,6 +29,7 @@ const AboutPage = ({ closeNav }) => {
 									preserveAspectRatio: "xMidYMid slice",
 								},
 							}}
+							style={{ maxWidth: 300 }}
 							height="auto"
 						/>
 					</div>

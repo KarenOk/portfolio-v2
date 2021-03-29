@@ -103,11 +103,11 @@
 .contact-page .social__link {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 18px;
 }
 
 .contact-page .social__icon {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 @media only screen and (max-width: 1200px) {

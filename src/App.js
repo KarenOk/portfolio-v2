@@ -25,6 +25,7 @@ import ContactPage from "./components/ContactPage/ContactPage";
 import ResumePage from "./components/ResumePage/ResumePage";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 import PortfolioItem from "./components/PortfolioPage/PortfolioItem";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 const banners = [
 	"https://res.cloudinary.com/karso/image/upload/v1613217031/Portfolio/banner_1_jqcqno.jpg",
@@ -199,7 +200,7 @@ function App() {
 							/>
 						)}
 					/>
-					<Route render={() => <Redirect to="/" />} />
+					<Route component={PageNotFound} />
 				</Switch>
 
 				<ToastsContainer store={ToastsStore} />

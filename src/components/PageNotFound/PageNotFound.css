@@ -1,0 +1,20 @@
+.not-found {
+    width: 90%;
+    overflow-y: auto;
+    height: calc(100vh - 125px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    margin: 0 auto 40px;
+    max-width: 1400px;
+}
+
+.not-found__body {
+    display: flex;
+}
+
+.not-found__text {
+    text-align: center;
+    font-size: 1.4em;
+}

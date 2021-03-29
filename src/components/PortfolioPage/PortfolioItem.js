@@ -4,6 +4,7 @@ import Mixpanel from "mixpanel-browser";
 import "./PortfolioItem.css";
 import data from "../../data.json";
 import { GithubIcon, LiveIcon } from "../../images/icons/icons";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 const PortfolioItem = ({ closeNav, match }) => {
 	const slug = match.params.slug;
@@ -11,8 +12,14 @@ const PortfolioItem = ({ closeNav, match }) => {
 
 	useEffect(() => {
 		closeNav();
-		Mixpanel.track("Portfolio Item Interaction", { project: project.names });
+		Mixpanel.track("Portfolio Item Interaction", {
+			project: project?.names || "Not found",
+		});
 	}, []);
+
+	if (!project) {
+		return <PageNotFound />;
+	}
 
 	return (
 		<div className="portfolio-item">

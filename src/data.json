@@ -51,7 +51,7 @@
     ],
     "projects": {"anozie-stores":{
         "name": "Anozie Stores",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "For this project, Anozie Stores requested for a website to manage their orders and allow users track their order status. This resulted in my building a full-stack application for this online store. The completion of this project streamlined their order placement process and removed ambiguity, which led to a significant improvement in the shopping experience of their customers.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/anozie-stores_whx38q.png",
         "gif_url": "",
         "live_url": "https://anoziestores.com",
@@ -59,7 +59,7 @@
     },
     "scribbles-blog":{
         "name": "Scribbles Blog",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Scribbles is a full stack blog application built using Flask and React. It allows authors to manage blog posts while readers can read and comment on each blog post. The blog posts are also available to users that are not logged in, but they are limited to just reading - they can't comment. A lot of the posts in this blog contain gibberish, but its simple UI gives me a lot of joy.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/scribbles_arkyod.png",
         "gif_url": "https://res.cloudinary.com/karso/image/upload/v1613348098/Portfolio/Project%20GIFs/scribbles_blog_yauonc.gif",
         "live_url": "https://scribbles-blog.netlify.app",
@@ -67,15 +67,15 @@
     },
     "gff":{
         "name": "Geraldine's Flourish Foods",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Geraldine’s Flourish Foods, a food processing and packaging company requested a website to boost their online presence, serve as a source of information about their products and the services they offer, as well as a platform for customers to purchase their products. These requirements led to my building a full-stack application for this company. The resulting website offers the customers convenience as they can access any information about GFF they need and make any purchases of their products in the comfort of their own home.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345203/Portfolio/Project%20Screenshots/gff_nb3ez1.png",
         "gif_url": "",
-        "live_url": "https://gff.netlify.app",
+        "live_url": "https://geraldinesflourishfoods.com",
         "github_url": ""
     },
     "pasteit":{
         "name": "PasteIt",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "PasteIt is an online clipboard which allows sharing of text over the internet by generating a unique URL. Others can access the contents of the paste via this URL. Built this because I got tired of opening Whatsapp each time I wanted to transfer text between my devices. This project makes use of ReactJS for the frontend, with Flask, PostgreSQL and SQLAlchemy for the backend.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/pasteit_xt8p0s.png",
         "gif_url": "",
         "live_url": "https://pasteit.netlify.app",
@@ -91,7 +91,7 @@
     },
     "task-ager":{
         "name": "Task-ager: The task manager",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Task-ager, Task Manager, get it 😉? Task-ager is a web-based task management application built with ReactJS. This project utilizes service workers which makes the app available to use even when the user’s device is offline. Being a Progressive Web App, it can be installed and then launched by users just as if it were any native app.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/task-ager_mhfcn2.png",
         "gif_url": "https://github.com/KarenOk/task-ager/raw/master/demo.gif",
         "live_url": "https://task-ager.netlify.app",
@@ -99,15 +99,15 @@
     },
     "portfolio-v2":{
         "name": "Portfolio V2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/portfolio_arzze1.png",
+        "description": "Decided to work on a second version of my personal website. You could say this doubles as some sort of digital resumé. Built with ReactJS. Don’t forget to reach out!",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1617226701/Portfolio/Project%20Screenshots/vh4nq8sdq5ymevsnerun.png",
         "gif_url": "",
         "live_url": "https://karenokonkwo.netlify.app.com",
         "github_url": "https://github.com/KarenOk/portfolio-v2"
     },
     "fyyur":{
         "name": "Fyyur",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of shows between local performing artists and venues. This site lets you list new artists and venues, discover them, and list shows with artists as a venue owner. This project involved building out the data models to power the API endpoints for the Fyyur site by connecting to a PostgreSQL database for storing, querying, and creating information about artists and venues on Fyyur.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/fyyur_djqyzv.png",
         "gif_url": "https://github.com/KarenOk/Fyyur/raw/master/demo.gif",
         "live_url": "",
@@ -115,7 +115,7 @@
     },
     "classic-arcade-game":{
         "name": "Classic Arcade Game",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "My rendition of the popular arcade game Frogger. This was a project I worked on while taking the Front-End Developer Nanodegree course. The aim of this game is to get the player to the water as many times as you can before for the countdown stops, while also avoiding the enemy bugs. Use the arrow keys to move the player left, right, up or down. Colliding with an enemy bug resets your position. Try it out and make sure to share your high score with me 🌚.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1614513215/Portfolio/Project%20Screenshots/classic_arcade_game_pptzw0.png",
         "gif_url": "https://github.com/KarenOk/Classic-Arcade-Game/raw/master/images/demo.gif",
         "live_url": "https://karenok.github.io/classic-arcade-game",
@@ -123,7 +123,7 @@
     },
     "online-examination-system":{
         "name": "Online Examination System",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Built this as my final year project for my Computer Engineering Bachelor’s Degree. In this project, I attempted to address some problems associated with paper-based examinations and also take into account some problems that could arise in a computer-based examination (such as power/network failure). The resulting system has the following features: web-based software which can automatically and accurately grade examinations; compatible on any platform; distributes questions randomly to each student to reduce cheating; allows random selection of questions; incorporates accessibility considerations and is able to handle network or power failure by providing resumption capabilities. Built using HTML, CSS, JavaScript, Bootstrap, PHP, MySQL.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/cbe_chc4yo.png",
         "gif_url": "https://github.com/KarenOk/Computer-Based-Examination-Software/raw/master/assets/images/demo.gif",
         "live_url": "http://cbe-test.atwebpages.com/views/login.php",
@@ -131,7 +131,7 @@
     },
     "contact-keeper":{
         "name": "Contact Keeper",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Full Stack application to manage contacts. Includes authentication functionality. Built using the MERN (MongoDB, Express, React, Node) stack.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/contact-keeper_l9hyd1.png",
         "gif_url": "https://github.com/KarenOk/Contact-Keeper/raw/master/demo.gif",
         "live_url": "http://contact-keeper.herokuapp.com/",
@@ -139,7 +139,7 @@
     },
     "github-finder":{
         "name": "Github Finder",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "In this project, I make use of GitHub's Developer API to search for and display basic information about Github users.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/github-finder_pfce9s.png",
         "gif_url": "https://github.com/KarenOk/Github-Finder/raw/master/demo.gif",
         "live_url": "https://find-users-github.netlify.app",

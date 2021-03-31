@@ -38,6 +38,7 @@
 .portfolio-page__img-wrapper {
     position: relative;
     cursor: pointer;
+    min-height: 160px;
 }
 
 .portfolio-page__img {

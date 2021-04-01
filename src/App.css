@@ -52,8 +52,13 @@
   display: none;
 }
 
+.app__nav {
+  transform: translate(0, 0);
+  transition: all 0.5s;
+}
+
 .app__nav--home {
-  display: none;
+  transform: translate(-10000px, 10000px);
 }
 
 .app__nav-list {
@@ -121,9 +126,6 @@
   }
   .app__nav.show {
     transform: translateX(0);
-  }
-  .app__nav--home {
-    display: block;
   }
   .app__nav-list {
     flex-direction: column;

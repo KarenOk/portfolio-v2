@@ -38,7 +38,7 @@ const LandingPage = ({ setIsHome, closeNav }) => {
 						}}
 					/>
 				</section>
-				<nav className={`landing-page__nav`}>
+				<nav className={`landing-page__nav`} aria-hidden="true">
 					<ul className="landing-page__nav-list">
 						<li className="landing-page__nav-item">
 							<NavLink

@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	NavLink,
-	Redirect,
-} from "react-router-dom";
+import { Switch, Route, NavLink, useLocation, Link } from "react-router-dom";
 import { ToastsContainer, ToastsStore } from "react-toasts";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import ReactGA from "react-ga";
 import logo from "./logos/logo6 white animated.svg";
 import {
@@ -38,10 +33,13 @@ function App() {
 	const [showNav, setShowNav] = useState(false);
 	const [isHome, setIsHome] = useState(false);
 
+	const location = useLocation();
+
 	useEffect(() => {
 		ReactGA.initialize("G-E6F6ZRS37H");
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
+
 	useEffect(() => {
 		const timer = setTimeout(nextBanner, 3000);
 
@@ -54,163 +52,161 @@ function App() {
 		let next = banner + 1;
 		setBanner(next > banners.length - 1 ? 0 : next);
 	};
+
 	return (
-		<Router>
-			<div
-				className="app"
-				style={{ backgroundImage: `url('${banners[banner]}')` }}
-			>
-				<div className="app__overlay"></div>
-				<header className="app__header">
-					<a href="/">
-						<object
-							data={logo}
-							className="app__logo"
-							type="image/svg+xml"
-							aria-label="Karen Okonkwo"
-							tabIndex="-1"
-						/>
-					</a>
+		<div
+			className="app"
+			style={{ backgroundImage: `url('${banners[banner]}')` }}
+		>
+			<div className="app__overlay"></div>
+			<header className="app__header">
+				<Link to="/">
+					<object
+						data={logo}
+						className="app__logo"
+						type="image/svg+xml"
+						aria-label="Karen Okonkwo"
+						tabIndex="-1"
+					/>
+				</Link>
+				<button
+					aria-label="Open menu"
+					className="app__menu-btn"
+					onClick={() => setShowNav(true)}
+				>
+					<MenuIcon className="app__menu-icon" height={60} stroke="white" />
+				</button>
+				<nav
+					className={`app__nav ${showNav ? "show" : ""} ${
+						isHome ? "app__nav--home" : ""
+					}`}
+				>
 					<button
-						aria-label="Open menu"
-						className="app__menu-btn"
-						onClick={() => setShowNav(true)}
+						className="app__nav-close"
+						aria-label="Close menu"
+						onClick={() => setShowNav(false)}
 					>
-						<MenuIcon className="app__menu-icon" height={60} stroke="white" />
+						<CloseCircleIcon width={40} fill="white" />
 					</button>
-					<nav
-						className={`app__nav ${showNav ? "show" : ""} ${
-							isHome ? "app__nav--home" : ""
-						}`}
-					>
-						<button
-							className="app__nav-close"
-							aria-label="Close menu"
-							onClick={() => setShowNav(false)}
-						>
-							<CloseCircleIcon width={40} fill="white" />
-						</button>
-						<ul className="app__nav-list">
-							<li className="app__nav-item">
-								<NavLink
-									exact
-									to="/"
-									activeClassName="app__nav-link--active"
-									className="app__nav-link"
-								>
-									Home
-								</NavLink>
-								<HomeIcon fill="white" width={25} className="app__nav-icon" />
-							</li>
-							<li className="app__nav-item">
-								<NavLink
-									exact
-									to="/about"
-									activeClassName="app__nav-link--active"
-									className="app__nav-link"
-								>
-									About
-								</NavLink>
-								<AboutIcon fill="white" width={25} className="app__nav-icon" />
-							</li>
-							<li className="app__nav-item">
-								<NavLink
-									exact
-									to="/resume"
-									activeClassName="app__nav-link--active"
-									className="app__nav-link"
-								>
-									Resume
-								</NavLink>
-								<ResumeIcon fill="white" width={30} className="app__nav-icon" />
-							</li>
-							<li className="app__nav-item">
-								<NavLink
-									exact
-									to="/portfolio"
-									activeClassName="app__nav-link--active"
-									className="app__nav-link"
-								>
-									Portfolio
-								</NavLink>
-								<PortfolioIcon
-									fill="white"
-									width={20}
-									className="app__nav-icon"
-								/>
-							</li>
-							<li className="app__nav-item">
-								<NavLink
-									exact
-									to="/contact"
-									activeClassName="app__nav-link--active"
-									className="app__nav-link"
-								>
-									Contact
-								</NavLink>
-								<ContactIcon
-									fill="white"
-									width={25}
-									className="app__nav-icon"
-								/>
-							</li>
-						</ul>
-					</nav>
-				</header>
-
-				<Switch>
-					<Route
-						exact
-						path="/about"
-						render={(props) => (
-							<AboutPage {...props} closeNav={() => setShowNav(false)} />
-						)}
-					/>
-					<Route
-						exact
-						path="/portfolio/:slug"
-						render={(props) => (
-							<PortfolioItem {...props} closeNav={() => setShowNav(false)} />
-						)}
-					/>
-					<Route
-						exact
-						path="/portfolio"
-						render={(props) => (
-							<PortfolioPage {...props} closeNav={() => setShowNav(false)} />
-						)}
-					/>
-					<Route
-						exact
-						path="/contact"
-						render={(props) => (
-							<ContactPage {...props} closeNav={() => setShowNav(false)} />
-						)}
-					/>
-					<Route
-						exact
-						path="/resume"
-						render={(props) => (
-							<ResumePage {...props} closeNav={() => setShowNav(false)} />
-						)}
-					/>
-					<Route
-						exact
-						path="/"
-						render={(props) => (
-							<LandingPage
-								{...props}
-								setIsHome={setIsHome}
-								closeNav={() => setShowNav(false)}
+					<ul className="app__nav-list">
+						<li className="app__nav-item">
+							<NavLink
+								exact
+								to="/"
+								activeClassName="app__nav-link--active"
+								className="app__nav-link"
+							>
+								Home
+							</NavLink>
+							<HomeIcon fill="white" width={25} className="app__nav-icon" />
+						</li>
+						<li className="app__nav-item">
+							<NavLink
+								exact
+								to="/about"
+								activeClassName="app__nav-link--active"
+								className="app__nav-link"
+							>
+								About
+							</NavLink>
+							<AboutIcon fill="white" width={25} className="app__nav-icon" />
+						</li>
+						<li className="app__nav-item">
+							<NavLink
+								exact
+								to="/resume"
+								activeClassName="app__nav-link--active"
+								className="app__nav-link"
+							>
+								Resume
+							</NavLink>
+							<ResumeIcon fill="white" width={30} className="app__nav-icon" />
+						</li>
+						<li className="app__nav-item">
+							<NavLink
+								exact
+								to="/portfolio"
+								activeClassName="app__nav-link--active"
+								className="app__nav-link"
+							>
+								Portfolio
+							</NavLink>
+							<PortfolioIcon
+								fill="white"
+								width={20}
+								className="app__nav-icon"
 							/>
-						)}
-					/>
-					<Route component={PageNotFound} />
-				</Switch>
+						</li>
+						<li className="app__nav-item">
+							<NavLink
+								exact
+								to="/contact"
+								activeClassName="app__nav-link--active"
+								className="app__nav-link"
+							>
+								Contact
+							</NavLink>
+							<ContactIcon fill="white" width={25} className="app__nav-icon" />
+						</li>
+					</ul>
+				</nav>
+			</header>
 
-				<ToastsContainer store={ToastsStore} />
-			</div>
-		</Router>
+			<TransitionGroup>
+				<CSSTransition key={location.key} classNames="page-fade" timeout={300}>
+					<Switch location={location}>
+						<Route
+							exact
+							path="/about"
+							render={(props) => (
+								<AboutPage {...props} closeNav={() => setShowNav(false)} />
+							)}
+						/>
+						<Route
+							exact
+							path="/portfolio/:slug"
+							render={(props) => (
+								<PortfolioItem {...props} closeNav={() => setShowNav(false)} />
+							)}
+						/>
+						<Route
+							exact
+							path="/portfolio"
+							render={(props) => (
+								<PortfolioPage {...props} closeNav={() => setShowNav(false)} />
+							)}
+						/>
+						<Route
+							exact
+							path="/contact"
+							render={(props) => (
+								<ContactPage {...props} closeNav={() => setShowNav(false)} />
+							)}
+						/>
+						<Route
+							exact
+							path="/resume"
+							render={(props) => (
+								<ResumePage {...props} closeNav={() => setShowNav(false)} />
+							)}
+						/>
+						<Route
+							exact
+							path="/"
+							render={(props) => (
+								<LandingPage
+									{...props}
+									setIsHome={setIsHome}
+									closeNav={() => setShowNav(false)}
+								/>
+							)}
+						/>
+						<Route component={PageNotFound} />
+					</Switch>
+				</CSSTransition>{" "}
+			</TransitionGroup>
+			<ToastsContainer store={ToastsStore} />
+		</div>
 	);
 }
 

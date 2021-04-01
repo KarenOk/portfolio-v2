@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    height: calc(100vh - 125px);
 }
 
 .landing-page__content {

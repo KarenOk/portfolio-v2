@@ -45,3 +45,21 @@ button:disabled {
   outline: none;
   box-shadow: 0 0 3pt 2pt #daae9d !important;
 }
+
+.page-fade-enter {
+  opacity: 0;
+}
+
+.page-fade-enter.page-fade-enter-active {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.page-fade-exit {
+  opacity: 1;
+}
+
+.page-fade-exit.page-fade-exit-active {
+  opacity: 0;
+  transition: all 0.3s;
+}

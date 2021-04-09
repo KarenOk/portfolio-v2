@@ -67,6 +67,7 @@ function App() {
 						type="image/svg+xml"
 						aria-label="Karen Okonkwo"
 						tabIndex="-1"
+						style={{ pointerEvents: "none" }}
 					/>
 				</Link>
 				<button

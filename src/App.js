@@ -27,6 +27,19 @@ const banners = [
 	"https://res.cloudinary.com/karso/image/upload/v1613217032/Portfolio/banner_2_olqefy.jpg",
 ];
 
+const navLinks = [
+	{ label: "Home", path: "/", icon: HomeIcon, iconWidth: 25 },
+	{ label: "About", path: "/about", icon: AboutIcon, iconWidth: 25 },
+	{ label: "Resume", path: "/resume", icon: ResumeIcon, iconWidth: 30 },
+	{
+		label: "Portfolio",
+		path: "/portfolio",
+		icon: PortfolioIcon,
+		iconWidth: 20,
+	},
+	{ label: "Contact", path: "/contact", icon: ContactIcon, iconWidth: 25 },
+];
+
 function App() {
 	const [banner, setBanner] = useState(0);
 	const [showNav, setShowNav] = useState(false);
@@ -57,6 +70,20 @@ function App() {
 		let next = banner + 1;
 		setBanner(next > banners.length - 1 ? 0 : next);
 	};
+
+	const renderNavLink = ({ label, path, icon: Icon, iconWidth }) => (
+		<li className="app__nav-item" key={path}>
+			<NavLink
+				exact
+				to={path}
+				activeClassName="app__nav-link--active"
+				className="app__nav-link"
+			>
+				{label}
+			</NavLink>
+			<Icon fill="white" width={iconWidth} className="app__nav-icon" />
+		</li>
+	);
 
 	return (
 		<div
@@ -95,65 +122,7 @@ function App() {
 						<CloseCircleIcon width={40} fill="white" />
 					</button>
 					<ul className="app__nav-list">
-						<li className="app__nav-item">
-							<NavLink
-								exact
-								to="/"
-								activeClassName="app__nav-link--active"
-								className="app__nav-link"
-							>
-								Home
-							</NavLink>
-							<HomeIcon fill="white" width={25} className="app__nav-icon" />
-						</li>
-						<li className="app__nav-item">
-							<NavLink
-								exact
-								to="/about"
-								activeClassName="app__nav-link--active"
-								className="app__nav-link"
-							>
-								About
-							</NavLink>
-							<AboutIcon fill="white" width={25} className="app__nav-icon" />
-						</li>
-						<li className="app__nav-item">
-							<NavLink
-								exact
-								to="/resume"
-								activeClassName="app__nav-link--active"
-								className="app__nav-link"
-							>
-								Resume
-							</NavLink>
-							<ResumeIcon fill="white" width={30} className="app__nav-icon" />
-						</li>
-						<li className="app__nav-item">
-							<NavLink
-								exact
-								to="/portfolio"
-								activeClassName="app__nav-link--active"
-								className="app__nav-link"
-							>
-								Portfolio
-							</NavLink>
-							<PortfolioIcon
-								fill="white"
-								width={20}
-								className="app__nav-icon"
-							/>
-						</li>
-						<li className="app__nav-item">
-							<NavLink
-								exact
-								to="/contact"
-								activeClassName="app__nav-link--active"
-								className="app__nav-link"
-							>
-								Contact
-							</NavLink>
-							<ContactIcon fill="white" width={25} className="app__nav-icon" />
-						</li>
+						{navLinks.map((navLink) => renderNavLink(navLink))}
 					</ul>
 				</nav>
 			</header>

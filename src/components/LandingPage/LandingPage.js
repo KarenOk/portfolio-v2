@@ -11,10 +11,31 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
+const navLinks = [
+	{ label: "Home", path: "/" },
+	{ label: "About", path: "/about" },
+	{ label: "Resume", path: "/resume" },
+	{ label: "Portfolio", path: "/portfolio" },
+	{ label: "Contact", path: "/contact" },
+];
+
 const LandingPage = () => {
 	useEffect(() => {
 		Mixpanel.track("Page visit", { page: "Home" });
 	}, []);
+
+	const renderNavLink = ({ label, path }) => (
+		<li className="landing-page__nav-item" key={path}>
+			<NavLink
+				exact
+				to={path}
+				activeClassName="landing-page__nav-link--active"
+				className="landing-page__nav-link"
+			>
+				{label}
+			</NavLink>
+		</li>
+	);
 
 	return (
 		<div className="landing-page">
@@ -35,56 +56,7 @@ const LandingPage = () => {
 				</section>
 				<nav className={`landing-page__nav`} aria-hidden="true">
 					<ul className="landing-page__nav-list">
-						<li className="landing-page__nav-item">
-							<NavLink
-								exact
-								to="/"
-								activeClassName="landing-page__nav-link--active"
-								className="landing-page__nav-link"
-							>
-								Home
-							</NavLink>
-						</li>
-						<li className="landing-page__nav-item">
-							<NavLink
-								exact
-								to="/about"
-								activeClassName="landing-page__nav-link--active"
-								className="landing-page__nav-link"
-							>
-								About
-							</NavLink>
-						</li>
-						<li className="landing-page__nav-item">
-							<NavLink
-								exact
-								to="/resume"
-								activeClassName="landing-page__nav-link--active"
-								className="landing-page__nav-link"
-							>
-								Resume
-							</NavLink>
-						</li>
-						<li className="landing-page__nav-item">
-							<NavLink
-								exact
-								to="/portfolio"
-								activeClassName="landing-page__nav-link--active"
-								className="landing-page__nav-link"
-							>
-								Portfolio
-							</NavLink>
-						</li>
-						<li className="landing-page__nav-item">
-							<NavLink
-								exact
-								to="/contact"
-								activeClassName="landing-page__nav-link--active"
-								className="landing-page__nav-link"
-							>
-								Contact
-							</NavLink>
-						</li>
+						{navLinks.map((navLink) => renderNavLink(navLink))}
 					</ul>
 				</nav>
 

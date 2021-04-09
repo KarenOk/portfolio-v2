@@ -36,17 +36,17 @@ const PortfolioItem = ({ closeNav, match }) => {
 			</header>
 			<main className="portfolio-item__body">
 				<a
-					class="device-wrapper portfolio-item__img-wrapper"
+					className="device-wrapper portfolio-item__img-wrapper"
 					// href={project.gif_url || project.image_url}
 					// target="_blank"
 				>
 					<div
-						class="device"
+						className="device"
 						data-device="Macbook2015"
 						data-orientation="portrait"
 						data-color="gold"
 					>
-						<div class="screen">
+						<div className="screen">
 							<img
 								src={
 									project.gif_url ||

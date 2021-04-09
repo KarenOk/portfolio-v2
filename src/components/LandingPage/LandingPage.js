@@ -11,14 +11,10 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
-const LandingPage = ({ setIsHome, closeNav }) => {
+const LandingPage = ({ closeNav }) => {
 	useEffect(() => {
-		setIsHome(true);
 		closeNav();
 		Mixpanel.track("Page visit", { page: "Home" });
-		return () => {
-			setIsHome(false);
-		};
 	}, []);
 
 	return (

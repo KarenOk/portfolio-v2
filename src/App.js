@@ -40,6 +40,11 @@ function App() {
 	}, []);
 
 	useEffect(() => {
+		if (location.pathname === "/") setIsHome(true);
+		else setIsHome(false);
+	}, [location.pathname]);
+
+	useEffect(() => {
 		const timer = setTimeout(nextBanner, 3000);
 
 		return () => {
@@ -194,11 +199,7 @@ function App() {
 							exact
 							path="/"
 							render={(props) => (
-								<LandingPage
-									{...props}
-									setIsHome={setIsHome}
-									closeNav={() => setShowNav(false)}
-								/>
+								<LandingPage {...props} closeNav={() => setShowNav(false)} />
 							)}
 						/>
 						<Route component={PageNotFound} />

@@ -3,6 +3,7 @@ import "./App.css";
 import { Switch, Route, NavLink, useLocation, Link } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import ReactGA from "react-ga";
+import Mixpanel from "mixpanel-browser";
 import logo from "./logos/logo6 white animated.svg";
 import {
 	MenuIcon,
@@ -48,7 +49,7 @@ function App() {
 	const location = useLocation();
 
 	useEffect(() => {
-		ReactGA.initialize("G-E6F6ZRS37H");
+		ReactGA.initialize("UA-193343367-1");
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
@@ -56,6 +57,8 @@ function App() {
 		if (location.pathname === "/") setIsHome(true);
 		else setIsHome(false);
 		setShowNav(false);
+		ReactGA.pageview(location.pathname);
+		Mixpanel.track("Page visit", { page: location.pathname });
 	}, [location.pathname]);
 
 	useEffect(() => {

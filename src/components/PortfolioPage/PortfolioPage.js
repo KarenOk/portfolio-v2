@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./PortfolioPage.css";
 import { Link } from "react-router-dom";
-import Mixpanel from "mixpanel-browser";
 import { AboutIcon } from "../../images/icons/icons";
 import data from "../../data.json";
 
 const PortfolioPage = () => {
-	useEffect(() => {
-		Mixpanel.track("Page visit", { page: "Portfolio" });
-	}, []);
-
 	return (
 		<section className="portfolio-page">
 			<header className="portfolio-page__header">

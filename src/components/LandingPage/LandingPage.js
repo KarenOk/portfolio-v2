@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./LandingPage.css";
-import Mixpanel from "mixpanel-browser";
 import Typewriter from "typewriter-effect";
 import { NavLink } from "react-router-dom";
 import {
@@ -20,10 +19,6 @@ const navLinks = [
 ];
 
 const LandingPage = () => {
-	useEffect(() => {
-		Mixpanel.track("Page visit", { page: "Home" });
-	}, []);
-
 	const renderNavLink = ({ label, path }) => (
 		<li className="landing-page__nav-item" key={path}>
 			<NavLink

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./ContactPage.css";
 import Mixpanel from "mixpanel-browser";
 import { useToasts } from "react-toast-notifications";
@@ -18,10 +18,6 @@ const ContactPage = () => {
 		message: "",
 	});
 	const { addToast } = useToasts();
-
-	useEffect(() => {
-		Mixpanel.track("Page visit", { page: "Contact" });
-	}, []);
 
 	const onChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });

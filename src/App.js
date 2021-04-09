@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Switch, Route, NavLink, useLocation, Link } from "react-router-dom";
-import { ToastsContainer, ToastsStore } from "react-toasts";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import ReactGA from "react-ga";
 import logo from "./logos/logo6 white animated.svg";
@@ -206,7 +205,6 @@ function App() {
 					</Switch>
 				</CSSTransition>{" "}
 			</TransitionGroup>
-			<ToastsContainer store={ToastsStore} />
 		</div>
 	);
 }

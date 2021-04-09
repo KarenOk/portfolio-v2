@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ContactPage.css";
-import { ToastsStore } from "react-toasts";
 import Mixpanel from "mixpanel-browser";
+import { useToasts } from "react-toast-notifications";
 import {
 	GithubIcon,
 	LinkedinIcon,
@@ -17,6 +17,7 @@ const ContactPage = ({ closeNav }) => {
 		subject: "",
 		message: "",
 	});
+	const { addToast } = useToasts();
 
 	useEffect(() => {
 		Mixpanel.track("Page visit", { page: "Contact" });
@@ -46,9 +47,12 @@ const ContactPage = ({ closeNav }) => {
 					throw Error(text);
 				});
 			}
-			ToastsStore.success(
+			addToast(
 				"Your message was sent successfully. I'll get back to you shortly.",
-				5000
+				{
+					appearance: "success",
+					autoDismiss: true,
+				}
 			);
 			setFormData({
 				name: "",
@@ -57,10 +61,10 @@ const ContactPage = ({ closeNav }) => {
 				message: "",
 			});
 		} catch (err) {
-			ToastsStore.error(
-				"Something went wrong while sending your message.",
-				5000
-			);
+			addToast("Something went wrong while sending your message.", {
+				appearance: "error",
+				autoDismiss: true,
+			});
 			console.error(err);
 		}
 		setLoading(false);

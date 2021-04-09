@@ -6,6 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Mixpanel from "mixpanel-browser";
 import uuid from "react-uuid";
+import { ToastProvider } from "react-toast-notifications";
 
 Mixpanel.init("3592c2157b5a976cd9dd40ff6099d08b");
 
@@ -20,7 +21,9 @@ if (localStorage.getItem("__visitor")) {
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
-			<App />
+			<ToastProvider placement="top-left">
+				<App />
+			</ToastProvider>
 		</Router>
 	</React.StrictMode>,
 	document.getElementById("root")

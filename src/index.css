@@ -37,6 +37,11 @@ button:disabled {
   bottom: 20px !important;
 }
 
+.react-toast-notifications__container {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }

@@ -33,10 +33,6 @@ button:disabled {
   opacity: 0.7;
 }
 
-.toasts-container {
-  bottom: 20px !important;
-}
-
 .react-toast-notifications__container {
   padding-top: 20px !important;
   padding-bottom: 20px !important;

@@ -35,21 +35,34 @@ const PortfolioItem = ({ closeNav, match }) => {
 				<span className="portfolio-item__path">{project.name}</span>
 			</header>
 			<main className="portfolio-item__body">
-				<div className="portfolio-item__img-wrapper">
-					{project.gif_url ? (
-						<img
-							src={project.gif_url}
-							alt={project.name}
-							className="portfolio-item__img"
-						/>
-					) : (
-						<img
-							src={project.image_url}
-							alt={project.name}
-							className="portfolio-item__img"
-						/>
-					)}
-				</div>
+				<a
+					class="device-wrapper portfolio-item__img-wrapper"
+					// href={project.gif_url || project.image_url}
+					// target="_blank"
+				>
+					<div
+						class="device"
+						data-device="Macbook2015"
+						data-orientation="portrait"
+						data-color="gold"
+					>
+						<div class="screen">
+							{project.gif_url ? (
+								<img
+									src={project.gif_url}
+									alt={project.name}
+									className="portfolio-item__img"
+								/>
+							) : (
+								<img
+									src={project.image_url}
+									alt={project.name}
+									className="portfolio-item__img"
+								/>
+							)}
+						</div>
+					</div>
+				</a>
 				<div className="portfolio-item__content">
 					<h2 className="portfolio-item__heading"> {project.name}</h2>
 					<p className="portfolio-item__summary">{project.description}</p>

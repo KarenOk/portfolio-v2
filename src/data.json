@@ -53,6 +53,7 @@
         "name": "Anozie Stores",
         "description": "For this project, Anozie Stores requested for a website to manage their orders and allow users track their order status. This resulted in my building a full-stack application for this online store. The completion of this project streamlined their order placement process and removed ambiguity, which led to a significant improvement in the shopping experience of their customers.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/anozie-stores_whx38q.png",
+        "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1617978380/Portfolio/Project%20Screenshots/zd0ofsflofwnidouopxx.png",
         "gif_url": "",
         "live_url": "https://anoziestores.com",
         "github_url": null
@@ -69,6 +70,7 @@
         "name": "Geraldine's Flourish Foods",
         "description": "Geraldine’s Flourish Foods, a food processing and packaging company requested a website to boost their online presence, serve as a source of information about their products and the services they offer, as well as a platform for customers to purchase their products. These requirements led to my building a full-stack application for this company. The resulting website offers the customers convenience as they can access any information about GFF they need and make any purchases of their products in the comfort of their own home.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345203/Portfolio/Project%20Screenshots/gff_nb3ez1.png",
+        "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1617978390/Portfolio/Project%20Screenshots/wwlhpbbcsa0rbtkysvcb.png",
         "gif_url": "",
         "live_url": "https://geraldinesflourishfoods.com",
         "github_url": ""
@@ -77,6 +79,7 @@
         "name": "PasteIt",
         "description": "PasteIt is an online clipboard which allows sharing of text over the internet by generating a unique URL. Others can access the contents of the paste via this URL. Built this because I got tired of opening Whatsapp each time I wanted to transfer text between my devices. This project makes use of ReactJS for the frontend, with Flask, PostgreSQL and SQLAlchemy for the backend.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/pasteit_xt8p0s.png",
+        "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1617978389/Portfolio/Project%20Screenshots/kuxhfsd4s8yxd1o1qdp4.png",
         "gif_url": "",
         "live_url": "https://pasteit.netlify.app",
         "github_url": "https://github.com/KarenOk/Paste-It"
@@ -85,6 +88,7 @@
         "name": "Nuvle",
         "description": "This project involved building a Minimum Viable Product for a restaurant management system. Built a fully functional, accessible and responsive UI for the product’s web application using React, Context API and Bootstrap 4. Integrated the web application with the backend by consuming RESTful API endpoints.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345202/Portfolio/Project%20Screenshots/nuvle_o6jpbl.png",
+        "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1617978380/Portfolio/Project%20Screenshots/zd0ofsflofwnidouopxx.png",
         "gif_url": "",
         "live_url": "",
         "github_url": ""
@@ -101,6 +105,7 @@
         "name": "Portfolio V2",
         "description": "Decided to work on a second version of my personal website. You could say this doubles as some sort of digital resumé. Built with ReactJS. Don’t forget to reach out!",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1617226701/Portfolio/Project%20Screenshots/vh4nq8sdq5ymevsnerun.png",
+        "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1617978396/Portfolio/Project%20Screenshots/akghtfnwad3unmt7yybg.png",
         "gif_url": "",
         "live_url": "https://karenokonkwo.netlify.app.com",
         "github_url": "https://github.com/KarenOk/portfolio-v2"

@@ -47,19 +47,15 @@ const PortfolioItem = ({ closeNav, match }) => {
 						data-color="gold"
 					>
 						<div class="screen">
-							{project.gif_url ? (
-								<img
-									src={project.gif_url}
-									alt={project.name}
-									className="portfolio-item__img"
-								/>
-							) : (
-								<img
-									src={project.image_url}
-									alt={project.name}
-									className="portfolio-item__img"
-								/>
-							)}
+							<img
+								src={
+									project.gif_url ||
+									project.device_image_url ||
+									project.image_url
+								}
+								alt={project.name}
+								className="portfolio-item__img"
+							/>
 						</div>
 					</div>
 				</a>

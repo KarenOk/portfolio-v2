@@ -11,7 +11,6 @@ const PortfolioItem = ({ closeNav, match }) => {
 	const project = data.projects[slug];
 
 	useEffect(() => {
-		closeNav();
 		Mixpanel.track("Portfolio Item Interaction", {
 			project: project?.names || "Not found",
 		});

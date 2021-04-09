@@ -42,6 +42,7 @@ function App() {
 	useEffect(() => {
 		if (location.pathname === "/") setIsHome(true);
 		else setIsHome(false);
+		setShowNav(false);
 	}, [location.pathname]);
 
 	useEffect(() => {
@@ -160,48 +161,12 @@ function App() {
 			<TransitionGroup>
 				<CSSTransition key={location.key} classNames="page-fade" timeout={300}>
 					<Switch location={location}>
-						<Route
-							exact
-							path="/about"
-							render={(props) => (
-								<AboutPage {...props} closeNav={() => setShowNav(false)} />
-							)}
-						/>
-						<Route
-							exact
-							path="/portfolio/:slug"
-							render={(props) => (
-								<PortfolioItem {...props} closeNav={() => setShowNav(false)} />
-							)}
-						/>
-						<Route
-							exact
-							path="/portfolio"
-							render={(props) => (
-								<PortfolioPage {...props} closeNav={() => setShowNav(false)} />
-							)}
-						/>
-						<Route
-							exact
-							path="/contact"
-							render={(props) => (
-								<ContactPage {...props} closeNav={() => setShowNav(false)} />
-							)}
-						/>
-						<Route
-							exact
-							path="/resume"
-							render={(props) => (
-								<ResumePage {...props} closeNav={() => setShowNav(false)} />
-							)}
-						/>
-						<Route
-							exact
-							path="/"
-							render={(props) => (
-								<LandingPage {...props} closeNav={() => setShowNav(false)} />
-							)}
-						/>
+						<Route exact path="/about" component={AboutPage} />
+						<Route exact path="/portfolio/:slug" component={PortfolioItem} />
+						<Route exact path="/portfolio" component={PortfolioPage} />
+						<Route exact path="/contact" component={ContactPage} />
+						<Route exact path="/resume" component={ResumePage} />
+						<Route exact path="/" component={LandingPage} />
 						<Route component={PageNotFound} />
 					</Switch>
 				</CSSTransition>{" "}

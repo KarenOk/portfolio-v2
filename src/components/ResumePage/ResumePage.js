@@ -12,10 +12,8 @@ import html5 from "../../images/tech/html5.svg";
 import css3 from "../../images/tech/css3.svg";
 import flask from "../../images/tech/flask.svg";
 
-const ResumePage = ({ closeNav }) => {
-	useEffect(() => {
-		closeNav();
-	}, []);
+const ResumePage = () => {
+	useEffect(() => {}, []);
 
 	return (
 		<section className="resume-page">

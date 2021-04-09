@@ -6,10 +6,9 @@ import Mixpanel from "mixpanel-browser";
 import animationData from "../../images/lotties/female.json";
 import { HTMLIcon, CodeBracesIcon, WebIcon } from "../../images/icons/icons";
 
-const AboutPage = ({ closeNav }) => {
+const AboutPage = () => {
 	useEffect(() => {
 		Mixpanel.track("Page visit", { page: "About" });
-		closeNav();
 	}, []);
 
 	return (

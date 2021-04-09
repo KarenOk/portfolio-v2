@@ -11,9 +11,8 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
-const LandingPage = ({ closeNav }) => {
+const LandingPage = () => {
 	useEffect(() => {
-		closeNav();
 		Mixpanel.track("Page visit", { page: "Home" });
 	}, []);
 

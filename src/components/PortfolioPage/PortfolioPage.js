@@ -5,10 +5,9 @@ import Mixpanel from "mixpanel-browser";
 import { AboutIcon } from "../../images/icons/icons";
 import data from "../../data.json";
 
-const PortfolioPage = ({ closeNav }) => {
+const PortfolioPage = () => {
 	useEffect(() => {
 		Mixpanel.track("Page visit", { page: "Portfolio" });
-		closeNav();
 	}, []);
 
 	return (

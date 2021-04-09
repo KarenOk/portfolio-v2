@@ -9,7 +9,7 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
-const ContactPage = ({ closeNav }) => {
+const ContactPage = () => {
 	const [loading, setLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
@@ -21,7 +21,6 @@ const ContactPage = ({ closeNav }) => {
 
 	useEffect(() => {
 		Mixpanel.track("Page visit", { page: "Contact" });
-		closeNav();
 	}, []);
 
 	const onChange = (e) => {

@@ -68,7 +68,7 @@ const LandingPage = () => {
 					<li className="social__item">
 						<a href={data.social.linkedIn} className="social__link">
 							LinkedIn
-							<LinkedinIcon className="social__icon" />
+							<LinkedinIcon className="social__icon" width={27} />
 						</a>
 					</li>
 					<li className="social__item">

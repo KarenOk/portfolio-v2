@@ -159,7 +159,11 @@ const ContactPage = () => {
 							</li>
 							<li className="social__item">
 								<a href={data.social.linkedIn} className="social__link">
-									<LinkedinIcon className="social__icon" fill="#0072b1" />
+									<LinkedinIcon
+										className="social__icon"
+										fill="#0072b1"
+										width={27}
+									/>
 									LinkedIn
 								</a>
 							</li>

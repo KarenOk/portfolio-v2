@@ -9,6 +9,12 @@ import {
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
+const encode = (data) => {
+	return Object.keys(data)
+		.map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+		.join("&");
+};
+
 const ContactPage = () => {
 	const [loading, setLoading] = useState(false);
 	const [formData, setFormData] = useState({
@@ -28,13 +34,10 @@ const ContactPage = () => {
 		setLoading(true);
 		Mixpanel.track("Contact Page Interaction", { action: "submit" });
 		try {
-			const res = await fetch("https://formspree.io/f/xdopvkjw", {
+			const res = await fetch("/", {
 				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-					Accept: "application/json",
-				},
-				body: JSON.stringify(formData),
+				headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				body: encode({ "form-name": "contact", ...formData }),
 			});
 
 			if (!res.ok) {

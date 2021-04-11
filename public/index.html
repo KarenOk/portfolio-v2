@@ -33,6 +33,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+  <!-- To help netlify bots detect form -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="subject" />
+    <textarea name="message"></textarea>
+  </form>
+
   <script src="%PUBLIC_URL%/node_modules/focus-visible/dist/focus-visible.min.js"></script>
 
 </body>

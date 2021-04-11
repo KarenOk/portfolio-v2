@@ -84,6 +84,7 @@
 
 .work__summary, .education__summary {
     white-space: pre-wrap;
+    line-height: 24px;
 }
 
 .education-wrapper::after {

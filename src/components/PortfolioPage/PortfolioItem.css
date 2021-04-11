@@ -66,6 +66,7 @@
 
 .portfolio-item__summary {
     line-height: 25px;
+    white-space: pre-wrap;
 }
 
 .portfolio-item__link-wrapper {

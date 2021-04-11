@@ -59,6 +59,7 @@
 
 .work {
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .work__timeline {
@@ -85,6 +86,7 @@
 .work__summary, .education__summary {
     white-space: pre-wrap;
     line-height: 24px;
+    margin-top: 10px;
 }
 
 .education-wrapper::after {

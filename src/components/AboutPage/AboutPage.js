@@ -48,7 +48,11 @@ const AboutPage = () => {
 
 								<li className="about-page__list-item">
 									Currently making magic at{" "}
-									<a href="https://eyowo.com" className="about-page__link">
+									<a
+										href="https://eyowo.com"
+										target="_blank"
+										className="about-page__link"
+									>
 										{" "}
 										Eyowo.
 									</a>

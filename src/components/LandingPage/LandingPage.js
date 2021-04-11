@@ -60,26 +60,35 @@ const LandingPage = () => {
 						<a
 							href={data.social.github}
 							className="social__link social__link--active"
+							aria-label="Github"
 						>
-							Github
 							<GithubIcon className="social__icon" />
 						</a>
 					</li>
 					<li className="social__item">
-						<a href={data.social.linkedIn} className="social__link">
-							LinkedIn
+						<a
+							href={data.social.linkedIn}
+							className="social__link"
+							aria-label="LinkedIn"
+						>
 							<LinkedinIcon className="social__icon" width={27} />
 						</a>
 					</li>
 					<li className="social__item">
-						<a href={"mailto:" + data.social.email} className="social__link">
-							Email
+						<a
+							href={"mailto:" + data.social.email}
+							className="social__link"
+							aria-label="Email"
+						>
 							<EmailIcon className="social__icon" />
 						</a>
 					</li>
 					<li className="social__item">
-						<a href={data.social.twitter} className="social__link">
-							Twitter
+						<a
+							href={data.social.twitter}
+							className="social__link"
+							aria-label="Twitter"
+						>
 							<TwitterIcon className="social__icon" />
 						</a>
 					</li>

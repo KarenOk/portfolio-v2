@@ -153,10 +153,11 @@
     fill: red;
   }
   .app__nav-link {
-    font-size: 0;
+    font-size: 1.1em;
+    text-indent: -10000px;
   }
   .app__nav:hover .app__nav-link {
-    font-size: 1.1em;
+    text-indent: unset;
   }
   .app__nav-link:hover::after, .app__nav-link--active::after {
     transform: translate3d(0, 0, 0);

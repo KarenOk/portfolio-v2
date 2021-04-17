@@ -147,4 +147,7 @@
     .portfolio-page__body {
         grid-template-columns: 1fr;
     }
+    .portfolio-page__img {
+        object-fit: contain;
+    }
 }

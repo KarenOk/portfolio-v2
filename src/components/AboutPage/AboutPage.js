@@ -59,7 +59,7 @@ const AboutPage = () => {
 								</li>
 							</ul>
 						</p>
-						<p className="about-page__text">
+						<div className="about-page__text">
 							<strong className="about-page__text--bold"> What I do? </strong>
 							<div className="about-page__services">
 								<a
@@ -93,7 +93,7 @@ const AboutPage = () => {
 									</span>
 								</a>
 							</div>
-						</p>
+						</div>
 
 						<p className="about-page__text about-page__text--restricted">
 							I'm super excited you're here. Feel free to{" "}

@@ -60,7 +60,7 @@ function App() {
 			window.location.href.includes("localhost") ||
 			window.location.href.includes("staging")
 		) {
-			ReactGA.initialize("UA-193343367-1");
+			ReactGA.initialize("UA-193343367-1", { debug: true });
 		} else ReactGA.initialize("UA-193343367-2");
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);

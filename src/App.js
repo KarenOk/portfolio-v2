@@ -57,11 +57,11 @@ function App() {
 
 	useEffect(() => {
 		if (
-			!window.location.href.includes("localhost") &&
-			!window.location.href.includes("staging")
+			window.location.href.includes("localhost") ||
+			window.location.href.includes("staging")
 		) {
 			ReactGA.initialize("UA-193343367-1");
-		}
+		} else ReactGA.initialize("UA-193343367-2");
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 

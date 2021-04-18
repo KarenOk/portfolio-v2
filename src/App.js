@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import { Switch, Route, NavLink, useLocation, Link } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -49,8 +49,13 @@ function App() {
 	const location = useLocation();
 
 	useEffect(() => {
+		window.addEventListener("resize", appHeight);
+		appHeight();
 		ReactGA.initialize("UA-193343367-1");
 		ReactGA.pageview(window.location.pathname + window.location.search);
+		return () => {
+			window.removeEventListener("resize", appHeight);
+		};
 	}, []);
 
 	useEffect(() => {
@@ -68,6 +73,11 @@ function App() {
 			clearTimeout(timer);
 		};
 	}, [banner]);
+
+	const appHeight = useCallback(() => {
+		const doc = document.documentElement;
+		doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+	}, [window.innerHeight]);
 
 	const nextBanner = () => {
 		let next = banner + 1;

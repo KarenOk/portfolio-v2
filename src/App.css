@@ -1,5 +1,6 @@
 .app {
   height: 100vh;
+  height: var(--app-height);
   max-width: 100%;
   backface-visibility: hidden;
   background-color: black;

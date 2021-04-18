@@ -4,20 +4,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Mixpanel from "mixpanel-browser";
-import uuid from "react-uuid";
 import { ToastProvider } from "react-toast-notifications";
 import "html5-device-mockups/dist/device-mockups.min.css";
-
-Mixpanel.init("3592c2157b5a976cd9dd40ff6099d08b");
-
-if (localStorage.getItem("__visitor")) {
-	Mixpanel.identify(localStorage.getItem("__visitor"));
-} else {
-	const id = uuid();
-	localStorage.setItem("__visitor", id);
-	Mixpanel.identify(id);
-}
 
 ReactDOM.render(
 	<React.StrictMode>

@@ -3,7 +3,6 @@ import "./App.css";
 import { Switch, Route, NavLink, useLocation, Link } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import ReactGA from "react-ga";
-import Mixpanel from "mixpanel-browser";
 import logo from "./logos/logo6 white animated.svg";
 import {
 	MenuIcon,
@@ -63,7 +62,6 @@ function App() {
 		else setIsHome(false);
 		setShowNav(false);
 		ReactGA.pageview(location.pathname);
-		Mixpanel.track("Page visit", { page: location.pathname });
 	}, [location.pathname]);
 
 	useEffect(() => {

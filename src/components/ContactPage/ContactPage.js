@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./ContactPage.css";
-import Mixpanel from "mixpanel-browser";
 import { useToasts } from "react-toast-notifications";
 import {
 	GithubIcon,
@@ -32,7 +31,6 @@ const ContactPage = () => {
 	const onSubmit = async (e) => {
 		e.preventDefault();
 		setLoading(true);
-		Mixpanel.track("Contact Page Interaction", { action: "submit" });
 		try {
 			const res = await fetch("/", {
 				method: "POST",

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ContactPage.css";
 import { useToasts } from "react-toast-notifications";
+import ReactGA from "react-ga";
 import {
 	GithubIcon,
 	LinkedinIcon,
@@ -31,6 +32,10 @@ const ContactPage = () => {
 	const onSubmit = async (e) => {
 		e.preventDefault();
 		setLoading(true);
+		ReactGA.event({
+			category: "Contact Form",
+			action: "Submit",
+		});
 		try {
 			const res = await fetch("/", {
 				method: "POST",

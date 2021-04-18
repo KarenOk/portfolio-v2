@@ -59,7 +59,7 @@ const LandingPage = () => {
 					<li className="social__item">
 						<a
 							href={data.social.github}
-							className="social__link social__link--active"
+							className="social__link"
 							target="_blank"
 							aria-label="Github"
 						>

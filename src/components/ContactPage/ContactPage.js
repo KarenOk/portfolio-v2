@@ -155,7 +155,7 @@ const ContactPage = () => {
 								<a
 									href={data.social.github}
 									target="_blank"
-									className="social__link social__link--active"
+									className="social__link"
 								>
 									<GithubIcon className="social__icon" fill="black" />
 									Github

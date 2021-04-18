@@ -154,6 +154,7 @@ const ContactPage = () => {
 							<li className="social__item">
 								<a
 									href={data.social.github}
+									target="_blank"
 									className="social__link social__link--active"
 								>
 									<GithubIcon className="social__icon" fill="black" />
@@ -161,7 +162,11 @@ const ContactPage = () => {
 								</a>
 							</li>
 							<li className="social__item">
-								<a href={data.social.linkedIn} className="social__link">
+								<a
+									href={data.social.linkedIn}
+									className="social__link"
+									target="_blank"
+								>
 									<LinkedinIcon
 										className="social__icon"
 										fill="#0072b1"
@@ -171,7 +176,11 @@ const ContactPage = () => {
 								</a>
 							</li>
 							<li className="social__item">
-								<a href={data.social.twitter} className="social__link">
+								<a
+									href={data.social.twitter}
+									className="social__link"
+									target="_blank"
+								>
 									<TwitterIcon className="social__icon" fill="#1DA1F2" />
 									Twitter
 								</a>

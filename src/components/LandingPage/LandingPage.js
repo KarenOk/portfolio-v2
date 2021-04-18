@@ -60,6 +60,7 @@ const LandingPage = () => {
 						<a
 							href={data.social.github}
 							className="social__link social__link--active"
+							target="_blank"
 							aria-label="Github"
 						>
 							<GithubIcon className="social__icon" />
@@ -69,6 +70,7 @@ const LandingPage = () => {
 						<a
 							href={data.social.linkedIn}
 							className="social__link"
+							target="_blank"
 							aria-label="LinkedIn"
 						>
 							<LinkedinIcon className="social__icon" width={27} />
@@ -78,6 +80,7 @@ const LandingPage = () => {
 						<a
 							href={"mailto:" + data.social.email}
 							className="social__link"
+							target="_blank"
 							aria-label="Email"
 						>
 							<EmailIcon className="social__icon" />
@@ -87,6 +90,7 @@ const LandingPage = () => {
 						<a
 							href={data.social.twitter}
 							className="social__link"
+							target="_blank"
 							aria-label="Twitter"
 						>
 							<TwitterIcon className="social__icon" />

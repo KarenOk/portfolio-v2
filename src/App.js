@@ -48,13 +48,21 @@ function App() {
 	const location = useLocation();
 
 	useEffect(() => {
-		window.addEventListener("resize", appHeight);
 		appHeight();
-		ReactGA.initialize("UA-193343367-1");
-		ReactGA.pageview(window.location.pathname + window.location.search);
+		window.addEventListener("resize", appHeight);
 		return () => {
 			window.removeEventListener("resize", appHeight);
 		};
+	}, []);
+
+	useEffect(() => {
+		if (
+			!window.location.href.includes("localhost") &&
+			!window.location.href.includes("staging")
+		) {
+			ReactGA.initialize("UA-193343367-1");
+		}
+		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
 	useEffect(() => {

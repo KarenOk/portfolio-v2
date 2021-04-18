@@ -139,7 +139,7 @@
         "description": "Full Stack application to manage contacts. Includes authentication functionality. Built using the MERN (MongoDB, Express, React, Node) stack.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1613345201/Portfolio/Project%20Screenshots/contact-keeper_l9hyd1.png",
         "gif_url": "https://github.com/KarenOk/Contact-Keeper/raw/master/demo.gif",
-        "live_url": "http://contact-keeper.herokuapp.com/",
+        "live_url": "http://contact-keeper-webapp.herokuapp.com/",
         "github_url": "https://github.com/KarenOk/Contact-Keeper"
     },
     "github-finder":{

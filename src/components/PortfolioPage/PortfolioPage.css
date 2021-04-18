@@ -1,7 +1,7 @@
 .portfolio-page {
     width: 90%;
     overflow-y: auto;
-    height: calc(100vh - 125px);
+    height: calc(var(--app-height) - 125px);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
 .portfolio-page__body {
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .portfolio-page__img-wrapper {
@@ -143,5 +143,11 @@
     }
     .portfolio-page__subheading {
         font-size: 1.1em;
+    }
+    .portfolio-page__body {
+        grid-template-columns: 1fr;
+    }
+    .portfolio-page__img {
+        object-fit: contain;
     }
 }

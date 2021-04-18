@@ -1,7 +1,7 @@
 .portfolio-item {
     width: 90%;
     overflow-y: auto;
-    height: calc(100vh - 125px);
+    height: calc(var(--app-height) - 125px);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -66,6 +66,7 @@
 
 .portfolio-item__summary {
     line-height: 25px;
+    white-space: pre-wrap;
 }
 
 .portfolio-item__link-wrapper {

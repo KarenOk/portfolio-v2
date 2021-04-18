@@ -48,14 +48,18 @@ const AboutPage = () => {
 
 								<li className="about-page__list-item">
 									Currently making magic at{" "}
-									<a href="https://eyowo.com" className="about-page__link">
+									<a
+										href="https://eyowo.com"
+										target="_blank"
+										className="about-page__link"
+									>
 										{" "}
 										Eyowo.
 									</a>
 								</li>
 							</ul>
 						</p>
-						<p className="about-page__text">
+						<div className="about-page__text">
 							<strong className="about-page__text--bold"> What I do? </strong>
 							<div className="about-page__services">
 								<a
@@ -89,7 +93,7 @@ const AboutPage = () => {
 									</span>
 								</a>
 							</div>
-						</p>
+						</div>
 
 						<p className="about-page__text about-page__text--restricted">
 							I'm super excited you're here. Feel free to{" "}

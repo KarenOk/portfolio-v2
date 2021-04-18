@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import { Switch, Route, NavLink, useLocation, Link } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import ReactGA from "react-ga";
-import Mixpanel from "mixpanel-browser";
 import logo from "./logos/logo6 white animated.svg";
 import {
 	MenuIcon,
@@ -49,7 +48,20 @@ function App() {
 	const location = useLocation();
 
 	useEffect(() => {
-		ReactGA.initialize("UA-193343367-1");
+		appHeight();
+		window.addEventListener("resize", appHeight);
+		return () => {
+			window.removeEventListener("resize", appHeight);
+		};
+	}, []);
+
+	useEffect(() => {
+		if (
+			window.location.href.includes("localhost") ||
+			window.location.href.includes("staging")
+		) {
+			ReactGA.initialize("UA-193343367-1", { debug: true });
+		} else ReactGA.initialize("UA-193343367-2");
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
@@ -58,7 +70,6 @@ function App() {
 		else setIsHome(false);
 		setShowNav(false);
 		ReactGA.pageview(location.pathname);
-		Mixpanel.track("Page visit", { page: location.pathname });
 	}, [location.pathname]);
 
 	useEffect(() => {
@@ -68,6 +79,11 @@ function App() {
 			clearTimeout(timer);
 		};
 	}, [banner]);
+
+	const appHeight = useCallback(() => {
+		const doc = document.documentElement;
+		doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+	}, [window.innerHeight]);
 
 	const nextBanner = () => {
 		let next = banner + 1;

@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import Mixpanel from "mixpanel-browser";
+import React from "react";
 import "./PortfolioItem.css";
+import { Link } from "react-router-dom";
+import ReactGA from "react-ga";
 import data from "../../data.json";
 import { GithubIcon, LiveIcon } from "../../images/icons/icons";
 import PageNotFound from "../PageNotFound/PageNotFound";
@@ -9,12 +9,6 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 const PortfolioItem = ({ closeNav, match }) => {
 	const slug = match.params.slug;
 	const project = data.projects[slug];
-
-	useEffect(() => {
-		Mixpanel.track("Portfolio Item Interaction", {
-			project: project?.names || "Not found",
-		});
-	}, []);
 
 	if (!project) {
 		return <PageNotFound />;
@@ -63,26 +57,28 @@ const PortfolioItem = ({ closeNav, match }) => {
 					<p className="portfolio-item__summary">{project.description}</p>
 					<div className="portfolio-item__link-wrapper">
 						{project.github_url ? (
-							<a
-								href={project.github_url}
+							<ReactGA.OutboundLink
+								eventLabel="Clicked github link for portfolio item"
+								to={project.github_url}
 								target="_blank"
 								className="portfolio-item__link portfolio-item__link--github"
 							>
 								<GithubIcon width={20} className="portfolio-item__link-icon" />{" "}
 								View on Github
-							</a>
+							</ReactGA.OutboundLink>
 						) : (
 							<a />
 						)}
 						{project.live_url ? (
-							<a
-								href={project.live_url}
+							<ReactGA.OutboundLink
+								eventLabel="Clicked live link for portfolio item"
+								to={project.live_url}
 								className="portfolio-item__link portfolio-item__link--live"
 								target="_blank"
 							>
 								<LiveIcon width={20} className="portfolio-item__link-icon" />{" "}
 								View Live
-							</a>
+							</ReactGA.OutboundLink>
 						) : (
 							<a />
 						)}

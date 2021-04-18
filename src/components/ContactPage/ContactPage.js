@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import "./ContactPage.css";
-import Mixpanel from "mixpanel-browser";
 import { useToasts } from "react-toast-notifications";
+import ReactGA from "react-ga";
 import {
 	GithubIcon,
 	LinkedinIcon,
 	TwitterIcon,
 } from "../../images/icons/icons";
 import data from "../../data.json";
+
+const encode = (data) => {
+	return Object.keys(data)
+		.map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+		.join("&");
+};
 
 const ContactPage = () => {
 	const [loading, setLoading] = useState(false);
@@ -26,15 +32,15 @@ const ContactPage = () => {
 	const onSubmit = async (e) => {
 		e.preventDefault();
 		setLoading(true);
-		Mixpanel.track("Contact Page Interaction", { action: "submit" });
+		ReactGA.event({
+			category: "Contact Form",
+			action: "Submit",
+		});
 		try {
-			const res = await fetch("https://formspree.io/f/xdopvkjw", {
+			const res = await fetch("/", {
 				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-					Accept: "application/json",
-				},
-				body: JSON.stringify(formData),
+				headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				body: encode({ "form-name": "contact", ...formData }),
 			});
 
 			if (!res.ok) {
@@ -151,14 +157,19 @@ const ContactPage = () => {
 							<li className="social__item">
 								<a
 									href={data.social.github}
-									className="social__link social__link--active"
+									target="_blank"
+									className="social__link"
 								>
 									<GithubIcon className="social__icon" fill="black" />
 									Github
 								</a>
 							</li>
 							<li className="social__item">
-								<a href={data.social.linkedIn} className="social__link">
+								<a
+									href={data.social.linkedIn}
+									className="social__link"
+									target="_blank"
+								>
 									<LinkedinIcon
 										className="social__icon"
 										fill="#0072b1"
@@ -168,7 +179,11 @@ const ContactPage = () => {
 								</a>
 							</li>
 							<li className="social__item">
-								<a href={data.social.twitter} className="social__link">
+								<a
+									href={data.social.twitter}
+									className="social__link"
+									target="_blank"
+								>
 									<TwitterIcon className="social__icon" fill="#1DA1F2" />
 									Twitter
 								</a>

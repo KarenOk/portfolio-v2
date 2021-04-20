@@ -29,6 +29,7 @@
 
 .portfolio-item__path--link, .portfolio-item__path--link:active, .portfolio-item__path--link:hover {
     color: #AF5C3B;
+    color: var(--color-primary);
     text-decoration: underline;
 }
 

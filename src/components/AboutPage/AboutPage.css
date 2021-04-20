@@ -16,6 +16,7 @@
 
 .about-page__heading--main {
     color: #AF5C3B;
+    color: var(--color-primary);
     font-family: 'Merienda One', cursive;
     font-size: 2.8em;
 }
@@ -51,6 +52,7 @@
 
 .about-page__link, .about-page__link:hover, .about-page__link:active {
     color: #AF5C3B;
+    color: var(--color-primary);
 }
 
 .about-page__list {
@@ -97,6 +99,7 @@
 
 .about-page__services-link:hover {
     background: #AF5C3B;
+    background: var(--color-primary);
     color: white;
 }
 

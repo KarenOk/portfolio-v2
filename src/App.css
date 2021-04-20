@@ -20,6 +20,7 @@
   left: 0;
   right: 0;
   background: linear-gradient( 90deg, rgba(155, 59, 4, 0.7) 4%, rgba(78, 41, 20, 0.7) 80%, rgba(51, 51, 51, 0.8) 100%);
+  background: linear-gradient( 90deg, var(--bgcolor-gradient-shade-1) 4%, var(--bgcolor-gradient-shade-2) 80%, var(--bgcolor-gradient-shade-3) 100%);
   z-index: 0;
 }
 
@@ -103,6 +104,7 @@
 .app__nav-link:hover::after, .app__nav-link--active::after {
   transform: translate3d(0, 0, 0);
   background: #faa84b;
+  background: var(--color-secondary);
 }
 
 .app__nav-close {
@@ -123,6 +125,7 @@
     margin: 0;
     padding: 20px;
     background-color: #faa84b;
+    background-color: var(--color-secondary);
     z-index: 2000;
     overflow-y: auto;
   }
@@ -152,6 +155,7 @@
   }
   .app__nav-link--active+.app__nav-icon path, .app__nav-link:hover+.app__nav-icon path {
     fill: red;
+    fill: var(--color-active);
   }
   .app__nav-link {
     font-size: 1.1em;
@@ -163,6 +167,7 @@
   .app__nav-link:hover::after, .app__nav-link--active::after {
     transform: translate3d(0, 0, 0);
     background: red;
+    background: var(--color-active);
   }
   .app__nav-close {
     cursor: pointer;

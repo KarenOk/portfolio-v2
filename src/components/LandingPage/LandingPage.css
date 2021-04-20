@@ -76,6 +76,7 @@
 .landing-page__nav-link:hover::after, .landing-page__nav-link--active::after {
     transform: translate3d(0, 0, 0);
     background: #faa84b;
+    background: var(--color-secondary);
 }
 
 .landing-page__nav-close {
@@ -93,6 +94,7 @@
 
 .landing-page .social__icon:hover {
     fill: #faa84b;
+    fill: var(--color-secondary);
 }
 
 @media only screen and (max-width: 750px) {

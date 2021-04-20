@@ -17,6 +17,7 @@
 .portfolio-page__heading {
     margin: 0;
     color: #AF5C3B;
+    color: var(--color-primary);
 }
 
 .portfolio-page__heading--main {
@@ -64,6 +65,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(175, 92, 59, 0.95);
+    background-color: var(--color-primary-transparent);
     color: white;
 }
 

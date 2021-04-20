@@ -17,6 +17,7 @@
 .contact-page__heading {
     margin: 0;
     color: #AF5C3B;
+    color: var(--color-primary);
 }
 
 .contact-page__heading--main {
@@ -52,6 +53,7 @@
 
 .contact-page__input {
     background-color: rgba(236, 179, 156, 0.2);
+    background-color: var(--color-input-background);
     border: none;
     height: 60px;
     padding: 20px;
@@ -70,6 +72,7 @@
 .contact-page__input:focus, .contact-page__send-btn:focus {
     outline: none;
     box-shadow: 0 0 3pt 2pt #daae9d;
+    box-shadow: 0 0 3pt 2pt var(--color-secondary-transparent);
 }
 
 .contact-page__textarea {
@@ -80,11 +83,13 @@
 
 .contact-page__link, .contact-page__link:hover {
     color: #AF5C3B;
+    color: var(--color-primary);
 }
 
 .contact-page__send-btn {
     color: white;
     background-color: #AF5C3B;
+    background-color: var(--color-primary);
     border: none;
     padding: 10px 20px;
     margin: 20px 20px 0 0;

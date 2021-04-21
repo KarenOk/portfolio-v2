@@ -1,6 +1,6 @@
 :root {
   --app-height: 100%;
-  --color-primary: #AF5C3B;
+  /* --color-primary: #AF5C3B;
   --color-primary-dull: rgba(175, 92, 59, 0.15);
   --color-primary-transparent: rgba(175, 92, 59, 0.95);
   --color-secondary: #faa84b;
@@ -9,7 +9,7 @@
   --color-input-background: rgba(236, 179, 156, 0.2);
   --bgcolor-gradient-shade-1: rgba(155, 59, 4, 0.7);
   --bgcolor-gradient-shade-2: rgba(78, 41, 20, 0.7);
-  --bgcolor-gradient-shade-3: rgba(51, 51, 51, 0.8);
+  --bgcolor-gradient-shade-3: rgba(51, 51, 51, 0.8); */
 }
 
 :root {

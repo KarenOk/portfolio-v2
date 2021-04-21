@@ -16,10 +16,10 @@
   --color-primary: rgb(68, 96, 175);
   --color-primary-dull: rgba(68, 96, 175, 0.15);
   --color-primary-transparent: rgba(68, 96, 175, 0.95);
-  --color-secondary: rgb(223, 124, 78);
-  --color-secondary-transparent: rgba(223, 124, 78, 0.15);
-  --color-active: #884747;
-  --color-input-background: rgba(223, 124, 78, 0.15);
+  --color-secondary: rgb(173, 84, 98);
+  --color-secondary-transparent: rgba(173, 84, 98, 0.3);
+  --color-active: #df8282;
+  --color-input-background: rgba(173, 84, 98, 0.1);
   --bgcolor-gradient-shade-1: rgba(51, 25, 25, 0.7);
   --bgcolor-gradient-shade-2: rgba(21, 25, 75, 0.7);
   --bgcolor-gradient-shade-3: rgba(51, 51, 51, 0.8);

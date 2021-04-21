@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutPage.css";
 import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
-import animationData from "../../images/lotties/female.json";
+import animationData from "../../images/lotties/female-blue.json";
 import { HTMLIcon, CodeBracesIcon, WebIcon } from "../../images/icons/icons";
 
 const AboutPage = () => {

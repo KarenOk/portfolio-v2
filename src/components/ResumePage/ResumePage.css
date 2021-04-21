@@ -142,7 +142,7 @@
     border-radius: 10px;
     z-index: 1;
     box-shadow: 0 0 0 8px rgba(250, 168, 75, 0.3);
-    box-shadow: 0 0 0 8px var(--color-secondary-transparent);
+    box-shadow: 0 0 0 8px var(--color-primary-dull);
     background: #AF5C3B;
     background: var(--color-primary);
 }

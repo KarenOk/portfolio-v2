@@ -105,7 +105,8 @@
 
 .about-page__services-icon {
     margin-bottom: 10px;
-    color: #AF5C3B
+    color: #AF5C3B;
+    color: var(--color-primary);
 }
 
 .about-page__services-link:hover .about-page__services-icon {

@@ -21,11 +21,14 @@ import ResumePage from "./components/ResumePage/ResumePage";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 import PortfolioItem from "./components/PortfolioPage/PortfolioItem";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import image1 from "./images/IMG_6446.jpg";
+import image2 from "./images/IMG_6448.jpg";
 
-const banners = [
-	"https://res.cloudinary.com/karso/image/upload/v1613217031/Portfolio/banner_1_jqcqno.jpg",
-	"https://res.cloudinary.com/karso/image/upload/v1613217032/Portfolio/banner_2_olqefy.jpg",
-];
+// const banners = [
+// 	"https://res.cloudinary.com/karso/image/upload/v1613217031/Portfolio/banner_1_jqcqno.jpg",
+// 	"https://res.cloudinary.com/karso/image/upload/v1613217032/Portfolio/banner_2_olqefy.jpg",
+// ];
+const banners = [image1, image2];
 
 const navLinks = [
 	{ label: "Home", path: "/", icon: HomeIcon, iconWidth: 25 },

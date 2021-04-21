@@ -20,8 +20,8 @@
   --color-secondary-transparent: rgba(223, 124, 78, 0.15);
   --color-active: #884747;
   --color-input-background: rgba(223, 124, 78, 0.15);
-  --bgcolor-gradient-shade-1: rgba(19, 36, 85, 0.7);
-  --bgcolor-gradient-shade-2: rgba(75, 21, 21, 0.7);
+  --bgcolor-gradient-shade-1: rgba(51, 25, 25, 0.7);
+  --bgcolor-gradient-shade-2: rgba(21, 25, 75, 0.7);
   --bgcolor-gradient-shade-3: rgba(51, 51, 51, 0.8);
 }
 

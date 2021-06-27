@@ -85,7 +85,7 @@
     },
     "abeg-app-clone":{
         "name": "Abeg App Clone",
-        "description": "Was inspired by the clone of Abeg App built by Olamide Solanke and decided to clone his clone 🌚. Check out <a href='https://no-dey-beg.netlify.app' target='_blank'> his clone </a>.",
+        "description": "Was inspired by the clone of Abeg App built by Olamide Solanke and decided to clone his clone 🌚. Check out <a href='https://no-dey-beg.netlify.app' target='_blank'>his clone</a>.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624830633/Portfolio/Project%20Screenshots/zxw5lmye6kquwliloc3w.png",
         "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624831566/Portfolio/Project%20GIFs/qziv6b9uisal21nuhyxp.gif",
         "live_url": "https://abeg-app-clone.netlify.app/",
@@ -144,7 +144,7 @@
     },
     "online-examination-system":{
         "name": "Online Examination System",
-        "description": "Built this as my final year project for my Computer Engineering Bachelor’s Degree. In this project, I attempted to address some problems associated with paper-based examinations and also take into account some problems that could arise in a computer-based examination (such as power/network failure). \n\n The resulting system has the following features: web-based software which can automatically and accurately grade examinations; compatible on any platform; distributes questions randomly to each student to reduce cheating; allows random selection of questions; incorporates accessibility considerations and is able to handle network or power failure by providing resumption capabilities. Built using HTML, CSS, JavaScript, Bootstrap, PHP, MySQL.",
+        "description": "Built this as my final year project for my Computer Engineering Bachelor’s Degree. In this project, I attempted to address some problems associated with paper-based examinations and also take into account some problems that could arise in a computer-based examination (such as power/network failure). <br /> <br /> The resulting system has the following features: <ul> <li> web-based software which can automatically and accurately grade examinations</li><li> compatible on any platform</li><li> distributes questions randomly to each student to reduce cheating</li><li> allows random selection of questions</li><li> incorporates accessibility considerations </li><li> is able to handle network or power failure by providing resumption capabilities.</li> </ul> <br /> Built using HTML, CSS, JavaScript, Bootstrap, PHP, MySQL. <br /> <br />",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624824208/Portfolio/Project%20Screenshots/jktqjkwvkfobkldxxkwa.png",
         "gif_url": "https://github.com/KarenOk/Computer-Based-Examination-Software/raw/master/assets/images/demo.gif",
         "live_url": "http://cbe-test.atwebpages.com/views/login.php",

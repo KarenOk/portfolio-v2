@@ -54,7 +54,10 @@ const PortfolioItem = ({ closeNav, match }) => {
 				</a>
 				<div className="portfolio-item__content">
 					<h2 className="portfolio-item__heading"> {project.name}</h2>
-					<p className="portfolio-item__summary">{project.description}</p>
+					<p
+						className="portfolio-item__summary"
+						dangerouslySetInnerHTML={{ __html: project.description }}
+					/>
 					<div className="portfolio-item__link-wrapper">
 						{project.github_url ? (
 							<ReactGA.OutboundLink

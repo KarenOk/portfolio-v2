@@ -58,6 +58,14 @@
         "live_url": "https://anoziestores.com",
         "github_url": null
     },
+    "whatsapp-web-clone":{
+        "name": "Whatsapp Web Clone",
+        "description": "Recreated the current Whatapp Web's UI. Best part? It handles both dark or light mode depending on your device's settings. Hoping to add the backend functionality sometime in the future.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1624832171/Portfolio/Project%20Screenshots/zyd2frefrqkbcpfhyk19.png",
+        "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624831638/Portfolio/Project%20GIFs/oenayqxpy5xw0p6tsg0x.gif",
+        "live_url": "https://whatsapp-clone-web.netlify.app/",
+        "github_url": "https://github.com/KarenOk/whatsapp-web-clone"
+    },
     "scribbles-blog":{
         "name": "Scribbles Blog",
         "description": "Scribbles is a full stack blog application built using Flask and React. It allows authors to manage blog posts while readers can read and comment on each blog post. The blog posts are also available to users that are not logged in, but they are limited to just reading - they can't comment. A lot of the posts in this blog contain gibberish, but its simple UI gives me a lot of joy.",
@@ -74,6 +82,14 @@
         "gif_url": "",
         "live_url": "https://geraldinesflourishfoods.com",
         "github_url": ""
+    },
+    "abeg-app-clone":{
+        "name": "Abeg App Clone",
+        "description": "Was inspired by the clone of Abeg App built by Olamide Solanke and decided to clone his clone 🌚. Check out <a href='https://no-dey-beg.netlify.app' target='_blank'> his clone </a>.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1624830633/Portfolio/Project%20Screenshots/zxw5lmye6kquwliloc3w.png",
+        "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624831566/Portfolio/Project%20GIFs/qziv6b9uisal21nuhyxp.gif",
+        "live_url": "https://abeg-app-clone.netlify.app/",
+        "github_url": "https://github.com/KarenOk/abeg-app-clone"
     },
     "pasteit":{
         "name": "PasteIt",

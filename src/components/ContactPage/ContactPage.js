@@ -6,6 +6,7 @@ import {
 	GithubIcon,
 	LinkedinIcon,
 	TwitterIcon,
+	InstagramIcon,
 } from "../../images/icons/icons";
 import data from "../../data.json";
 
@@ -186,6 +187,16 @@ const ContactPage = () => {
 								>
 									<TwitterIcon className="social__icon" fill="#1DA1F2" />
 									Twitter
+								</a>
+							</li>
+							<li className="social__item">
+								<a
+									href={data.social.instagram}
+									className="social__link"
+									target="_blank"
+								>
+									<InstagramIcon className="social__icon" fill="#E1306C" />
+									Instagram
 								</a>
 							</li>
 						</ul>

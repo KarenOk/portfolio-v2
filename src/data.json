@@ -63,7 +63,7 @@
         "name": "Whatsapp Web Clone",
         "description": "Recreated the current Whatapp Web's UI. Best part? It handles both dark or light mode depending on your device's settings. Hoping to add the backend functionality sometime in the future.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624832171/Portfolio/Project%20Screenshots/zyd2frefrqkbcpfhyk19.png",
-        "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624831638/Portfolio/Project%20GIFs/oenayqxpy5xw0p6tsg0x.gif",
+        "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624868920/Portfolio/Project%20GIFs/tu5chddivl89nactrovw.gif",
         "live_url": "https://whatsapp-clone-web.netlify.app/",
         "github_url": "https://github.com/KarenOk/whatsapp-web-clone"
     },
@@ -115,8 +115,7 @@
         "description": "This project involved building a Minimum Viable Product for a proptech startup company, Rentgage. Built a mobile application for the product's client-side as well as implemented the backend to go along with it. <br /> <br /> Built using React Native and Node.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624835630/Portfolio/Project%20Screenshots/plbctazbvcnqs8ipbx7y.png",
         "device_type": "mobile",
-        "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1624836483/Portfolio/Project%20Screenshots/vcgyatntkayyyrz2zpea.png",
-        "gif_url": "",
+        "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624873055/Portfolio/Project%20GIFs/afxrhdy8ocehdoly0e5a.gif",
         "live_url": "",
         "github_url": ""
     },

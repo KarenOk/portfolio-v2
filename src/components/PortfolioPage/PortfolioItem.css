@@ -44,6 +44,11 @@
     /* cursor: pointer; */
 }
 
+.portfolio-item__img-wrapper--mobile {
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio-item__img-wrapper .screen {
     background-color: black;
 }

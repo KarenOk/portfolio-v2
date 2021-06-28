@@ -109,6 +109,16 @@
         "live_url": "",
         "github_url": ""
     },
+    "rentgage":{
+        "name": "Rentgage MVP",
+        "description": "This project involved building a Minimum Viable Product for a proptech startup company, Rentgage. Built a mobile application for the product's client-side as well as implemented the backend to go along with it. <br /> <br /> Built using React Native and Node.",
+        "image_url": "https://res.cloudinary.com/karso/image/upload/v1624835630/Portfolio/Project%20Screenshots/plbctazbvcnqs8ipbx7y.png",
+        "device_type": "mobile",
+        "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1624836483/Portfolio/Project%20Screenshots/vcgyatntkayyyrz2zpea.png",
+        "gif_url": "",
+        "live_url": "",
+        "github_url": ""
+    },
     "task-ager":{
         "name": "Task-ager: The task manager",
         "description": "Task-ager, Task Manager, get it 😉? Task-ager is a web-based task management application built with ReactJS. This project utilizes service workers which makes the app available to use even when the user’s device is offline. Being a Progressive Web App, it can be installed and then launched by users just as if it were any native app.",

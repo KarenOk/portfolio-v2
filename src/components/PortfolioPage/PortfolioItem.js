@@ -9,6 +9,7 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 const PortfolioItem = ({ closeNav, match }) => {
 	const slug = match.params.slug;
 	const project = data.projects[slug];
+	const isMobile = project?.device_type === "mobile";
 
 	if (!project) {
 		return <PageNotFound />;
@@ -28,30 +29,36 @@ const PortfolioItem = ({ closeNav, match }) => {
 				<span className="portfolio-item__path">{project.name}</span>
 			</header>
 			<main className="portfolio-item__body">
-				<a
-					className="device-wrapper portfolio-item__img-wrapper"
-					// href={project.gif_url || project.image_url}
-					// target="_blank"
+				<div
+					className={`portfolio-item__img-wrapper ${
+						isMobile ? "portfolio-item__img-wrapper--mobile" : ""
+					}`}
 				>
-					<div
-						className="device"
-						data-device="Macbook2015"
-						data-orientation="portrait"
-						data-color="gold"
+					<a
+						className="device-wrapper"
+						// href={project.gif_url || project.image_url}
+						// target="_blank"
 					>
-						<div className="screen">
-							<img
-								src={
-									project.gif_url ||
-									project.device_image_url ||
-									project.image_url
-								}
-								alt={project.name}
-								className="portfolio-item__img"
-							/>
+						<div
+							className="device"
+							data-device={isMobile ? "iPhone6" : "Macbook2015"}
+							data-orientation="portrait"
+							data-color={isMobile ? "white" : "gold"}
+						>
+							<div className="screen">
+								<img
+									src={
+										project.gif_url ||
+										project.device_image_url ||
+										project.image_url
+									}
+									alt={project.name}
+									className="portfolio-item__img"
+								/>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
 				<div className="portfolio-item__content">
 					<h2 className="portfolio-item__heading"> {project.name}</h2>
 					<p

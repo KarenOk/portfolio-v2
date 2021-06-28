@@ -36,16 +36,19 @@ const PortfolioItem = ({ closeNav, match }) => {
 				>
 					<a
 						className="device-wrapper"
-						// href={project.gif_url || project.image_url}
-						// target="_blank"
+						href={project.gif_url || project.image_url}
+						target="_blank"
 					>
 						<div
-							className="device"
+							className="device tooltip"
 							data-device={isMobile ? "iPhone6" : "Macbook2015"}
 							data-orientation="portrait"
 							data-color={isMobile ? "white" : "gold"}
 						>
 							<div className="screen">
+								<span class="tooltip__text tooltip__text--bottom">
+									Click to view fullscreen
+								</span>
 								<img
 									src={
 										project.gif_url ||

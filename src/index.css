@@ -68,3 +68,44 @@ button:disabled {
   opacity: 0;
   transition: all 0.3s;
 }
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip__text {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(56, 54, 54);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltip__text::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: inherit;
+}
+
+.tooltip .tooltip__text--bottom {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip .tooltip__text--bottom::after {
+  transform: rotate( 45deg) translateX(-50%);
+  top: -1px;
+  left: 50%;
+}
+
+.tooltip:hover .tooltip__text {
+  visibility: visible;
+}

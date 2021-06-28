@@ -53,6 +53,10 @@
     background-color: black;
 }
 
+.portfolio-item__img-wrapper .tooltip__text {
+    bottom: -40%;
+}
+
 .portfolio-item__img {
     width: 100%;
     height: 100%;

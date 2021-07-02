@@ -44,8 +44,17 @@
     /* cursor: pointer; */
 }
 
+.portfolio-item__img-wrapper--mobile {
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio-item__img-wrapper .screen {
     background-color: black;
+}
+
+.portfolio-item__img-wrapper .tooltip__text {
+    bottom: -40%;
 }
 
 .portfolio-item__img {
@@ -67,6 +76,15 @@
 .portfolio-item__summary {
     line-height: 25px;
     white-space: pre-wrap;
+}
+
+.portfolio-item__summary a {
+    color: #AF5C3B;
+}
+
+.portfolio-item__summary ul {
+    list-style-type: disc;
+    padding-left: 40px;
 }
 
 .portfolio-item__link-wrapper {

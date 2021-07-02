@@ -23,8 +23,8 @@ import PortfolioItem from "./components/PortfolioPage/PortfolioItem";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 const banners = [
-	"https://res.cloudinary.com/karso/image/upload/v1613217031/Portfolio/banner_1_jqcqno.jpg",
-	"https://res.cloudinary.com/karso/image/upload/v1613217032/Portfolio/banner_2_olqefy.jpg",
+	"https://res.cloudinary.com/karso/image/upload/v1624824339/Portfolio/i7ryav6u9mr5t9ydlja1.jpg",
+	"https://res.cloudinary.com/karso/image/upload/v1624824340/Portfolio/rrwu6vfrun1sfshm3uin.jpg",
 ];
 
 const navLinks = [

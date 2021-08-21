@@ -52,7 +52,7 @@
     ],
     "projects": {"anozie-stores":{
         "name": "Anozie Stores",
-        "description": "For this project, Anozie Stores requested for a website to manage their orders and allow users track their order status. This resulted in my building a full-stack application for this online store. The completion of this project streamlined their order placement process and removed ambiguity, which led to a significant improvement in the shopping experience of their customers.",
+        "description": "For this project, Anozie Stores requested for a website to manage their orders and allow users track their order status. This resulted in my building a full-stack application for this online store. The completion of this project streamlined and removed ambiguities with their order placement process, which led to a significant improvement in the shopping experience of their customers.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624824208/Portfolio/Project%20Screenshots/lj2yamj3s7gjnkzfsfdt.png",
         "device_image_url": "https://res.cloudinary.com/karso/image/upload/v1624824211/Portfolio/Project%20Screenshots/g4pjkwgfwyscbhjpbmss.png",
         "gif_url": "",
@@ -112,7 +112,7 @@
     },
     "rentgage":{
         "name": "Rentgage MVP",
-        "description": "This project involved building a Minimum Viable Product for a proptech startup company, Rentgage. Built a mobile application for the product's client-side as well as implemented the backend to go along with it. <br /> <br /> Built using React Native and Node.",
+        "description": "This project involved building a Minimum Viable Product for a proptech startup company, Rentgage. Built a mobile application for the product's client-side as well as the backend to go along with it. <br /> <br /> Built using React Native and Node.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624835630/Portfolio/Project%20Screenshots/plbctazbvcnqs8ipbx7y.png",
         "device_type": "mobile",
         "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624873055/Portfolio/Project%20GIFs/afxrhdy8ocehdoly0e5a.gif",

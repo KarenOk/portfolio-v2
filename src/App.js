@@ -48,10 +48,10 @@ function App() {
 	const location = useLocation();
 
 	useEffect(() => {
-		appHeight();
-		window.addEventListener("resize", appHeight);
+		updateAppHeight();
+		window.addEventListener("resize", updateAppHeight);
 		return () => {
-			window.removeEventListener("resize", appHeight);
+			window.removeEventListener("resize", updateAppHeight);
 		};
 	}, []);
 
@@ -73,19 +73,19 @@ function App() {
 	}, [location.pathname]);
 
 	useEffect(() => {
-		const timer = setTimeout(nextBanner, 3000);
+		const timer = setTimeout(getNextBanner, 3000);
 
 		return () => {
 			clearTimeout(timer);
 		};
 	}, [banner]);
 
-	const appHeight = useCallback(() => {
+	const updateAppHeight = useCallback(() => {
 		const doc = document.documentElement;
 		doc.style.setProperty("--app-height", `${window.innerHeight}px`);
 	}, [window.innerHeight]);
 
-	const nextBanner = () => {
+	const getNextBanner = () => {
 		let next = banner + 1;
 		setBanner(next > banners.length - 1 ? 0 : next);
 	};

@@ -60,8 +60,10 @@ function App() {
 			window.location.href.includes("localhost") ||
 			window.location.href.includes("staging")
 		) {
-			ReactGA.initialize("UA-193343367-1", { debug: true });
-		} else ReactGA.initialize("UA-193343367-2");
+			ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID_STAGING, {
+				debug: true,
+			});
+		} else ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 

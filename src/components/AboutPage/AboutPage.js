@@ -49,12 +49,12 @@ const AboutPage = () => {
 								<li className="about-page__list-item">
 									Currently making magic at{" "}
 									<a
-										href="https://eyowo.com"
+										href="https://www.bloomberg.com/company/"
 										target="_blank"
 										className="about-page__link"
 									>
 										{" "}
-										Eyowo.
+										Bloomberg L.P.
 									</a>
 								</li>
 							</ul>

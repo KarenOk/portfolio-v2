@@ -16,8 +16,8 @@ const PortfolioPage = () => {
 					Portfolio showcase of some of my work.
 				</p>
 			</header>
-			<div className="portfolio-page__body">
-				<Fade bottom>
+			<Fade bottom>
+				<div className="portfolio-page__body">
 					{Object.keys(data.projects).map((slug, i) => {
 						const project = data.projects[slug];
 						return (
@@ -51,8 +51,8 @@ const PortfolioPage = () => {
 							</Link>
 						);
 					})}
-				</Fade>
-			</div>
+				</div>
+			</Fade>
 		</section>
 	);
 };

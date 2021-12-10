@@ -16,7 +16,7 @@ const PortfolioPage = () => {
 					Portfolio showcase of some of my work.
 				</p>
 			</header>
-			<Fade bottom>
+			<Fade bottom cascade>
 				<div className="portfolio-page__body">
 					{Object.keys(data.projects).map((slug, i) => {
 						const project = data.projects[slug];

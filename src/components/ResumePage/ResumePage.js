@@ -1,5 +1,6 @@
 import React from "react";
 import "./ResumePage.css";
+import Fade from "react-reveal/Fade";
 import data from "../../data.json";
 import javascript from "../../images/tech/javascript.svg";
 import git from "../../images/tech/git.svg";
@@ -33,16 +34,18 @@ const ResumePage = () => {
 					</div>
 					<div className="resume-page__content-right">
 						<div className="work-wrapper">
-							{data.work.map((work, i) => (
-								<div className="work" key={i}>
-									<p className="work__timeline">
-										{work.timeline.from} - {work.timeline.to}
-									</p>
-									<h3 className="work__role">{work.role}</h3>
-									<p className="work__company">{work.company}</p>
-									<p className="work__summary">{work.summary} </p>
-								</div>
-							))}
+							<Fade bottom>
+								{data.work.map((work, i) => (
+									<div className="work" key={i}>
+										<p className="work__timeline">
+											{work.timeline.from} - {work.timeline.to}
+										</p>
+										<h3 className="work__role">{work.role}</h3>
+										<p className="work__company">{work.company}</p>
+										<p className="work__summary">{work.summary} </p>
+									</div>
+								))}
+							</Fade>
 						</div>
 					</div>
 				</div>
@@ -55,14 +58,16 @@ const ResumePage = () => {
 					<div className="resume-page__content-right">
 						<div className="education-wrapper">
 							{data.education.map((edu, i) => (
-								<div className="education" key={i}>
-									<h3 className="education__degree">{edu.degree}</h3>
-									<p className="education__school">{edu.school}</p>
-									<p className="education__timeline">
-										{edu.timeline.from} - {edu.timeline.to}
-									</p>
-									<p className="education__summary">{edu.summary} </p>
-								</div>
+								<Fade bottom>
+									<div className="education" key={i}>
+										<h3 className="education__degree">{edu.degree}</h3>
+										<p className="education__school">{edu.school}</p>
+										<p className="education__timeline">
+											{edu.timeline.from} - {edu.timeline.to}
+										</p>
+										<p className="education__summary">{edu.summary} </p>
+									</div>
+								</Fade>
 							))}
 						</div>
 					</div>
@@ -90,53 +95,60 @@ const ResumePage = () => {
 						
 						
 						*/}
-						<div className="tech">
-							<img
-								src={javascript}
-								alt="Javascript"
-								title="Javascript"
-								className="tech__logo"
-							/>
-							<img
-								src={react}
-								alt="React JS"
-								title="React JS"
-								className="tech__logo"
-							/>
-							<img
-								src={python}
-								alt="Python"
-								title="Python"
-								className="tech__logo"
-							/>
-							<img
-								src={flask}
-								alt="Flask"
-								title="Flask"
-								className="tech__logo"
-							/>
-							<img
-								src={nodejs}
-								alt="NodeJS"
-								title="NodeJS"
-								className="tech__logo"
-							/>
-							<img src={sql} alt="SQL" title="SQL" className="tech__logo" />
-							<img
-								src={html5}
-								alt="HTML5"
-								title="HTML5"
-								className="tech__logo"
-							/>
-							<img src={css3} alt="CSS3" title="CSS3" className="tech__logo" />
-							<img src={git} alt="Git" title="Git" className="tech__logo" />
-							<img
-								src={linux}
-								alt="Linux"
-								title="Linux"
-								className="tech__logo"
-							/>
-						</div>
+						<Fade bottom>
+							<div className="tech">
+								<img
+									src={javascript}
+									alt="Javascript"
+									title="Javascript"
+									className="tech__logo"
+								/>
+								<img
+									src={react}
+									alt="React JS"
+									title="React JS"
+									className="tech__logo"
+								/>
+								<img
+									src={python}
+									alt="Python"
+									title="Python"
+									className="tech__logo"
+								/>
+								<img
+									src={flask}
+									alt="Flask"
+									title="Flask"
+									className="tech__logo"
+								/>
+								<img
+									src={nodejs}
+									alt="NodeJS"
+									title="NodeJS"
+									className="tech__logo"
+								/>
+								<img src={sql} alt="SQL" title="SQL" className="tech__logo" />
+								<img
+									src={html5}
+									alt="HTML5"
+									title="HTML5"
+									className="tech__logo"
+								/>
+								<img
+									src={css3}
+									alt="CSS3"
+									title="CSS3"
+									className="tech__logo"
+								/>
+								<img src={git} alt="Git" title="Git" className="tech__logo" />
+								<img
+									src={linux}
+									alt="Linux"
+									title="Linux"
+									className="tech__logo"
+								/>
+							</div>
+						</Fade>
 					</div>
 				</div>
 			</div>

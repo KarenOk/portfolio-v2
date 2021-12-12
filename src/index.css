@@ -109,3 +109,7 @@ button:disabled {
 .tooltip:hover .tooltip__text {
   visibility: visible;
 }
+
+.react-reveal {
+  will-change: transform, opacity;
+}

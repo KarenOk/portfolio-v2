@@ -102,6 +102,7 @@
 .education {
     position: relative;
     margin-bottom: 40px;
+    z-index: 10;
 }
 
 .education__degree {

@@ -25,11 +25,18 @@
     ], 
     "work":[
         {
+            "role": "Software Engineer",
+            "location": "London, United Kingdom",
+            "company": "Bloomberg L.P.",
+            "timeline": {"from": "August 2020", "to": "Present"},
+            "summary": "• Creating the tools that allow Bloomberg’s 3000+ editorial staff worldwide to publish market-moving financial news."
+        }, 
+        {
             "role": "Front-End Engineer",
             "location": "Lagos, Nigeria",
             "company": "Softcom Africa",
             "timeline": {"from": "May 2020", "to": "July 2021"},
-            "summary": "• Currently working with the Eyowo team to build out web interfaces that help users interact with the product - which provides financial services to anyone with a phone number. \n• Worked on front-end applications to drive NPower - a Nigerian Federal Government programme that addresses the problem of youth unemployment in the country. Worked alongside other disciplines including back-end, QA, design, and UI developers."
+            "summary": "• Worked with the Eyowo team to build out web interfaces that help users interact with the product - which provides financial services to anyone with a phone number. \n• Worked on front-end applications to drive NPower - a Nigerian Federal Government programme that addresses the problem of youth unemployment in the country. Worked alongside other disciplines including back-end, QA, design, and UI developers."
         }, {
             "role": "Freelancer",
             "location": "Lagos, Nigeria",
@@ -61,7 +68,7 @@
     },
     "whatsapp-web-clone":{
         "name": "Whatsapp Web Clone",
-        "description": "Recreated the current Whatapp Web's UI. Best part? It handles both dark or light mode depending on your device's settings. Hoping to add the backend functionality sometime in the future.",
+        "description": "Recreated the current Whatsapp Web's UI. Best part? It handles both dark or light mode depending on your device's settings. Implemented a simple backend service for communication with this clone using websocket technology as well.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624874114/Portfolio/Project%20Screenshots/p8yvzprijsyuro2h9gtb.png",
         "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624868920/Portfolio/Project%20GIFs/tu5chddivl89nactrovw.gif",
         "live_url": "https://whatsapp-clone-web.netlify.app/",
@@ -146,7 +153,7 @@
     },
     "classic-arcade-game":{
         "name": "Classic Arcade Game",
-        "description": "My rendition of the popular arcade game Frogger. This was a project I worked on while taking the Front-End Developer Nanodegree course. The aim of this game is to get the player to the water as many times as you can before for the countdown stops, while also avoiding the enemy bugs. Use the arrow keys to move the player left, right, up or down. Colliding with an enemy bug resets your position. Try it out and make sure to share your high score with me 🌚.",
+        "description": "My rendition of the popular arcade game Frogger. This was a project I worked on while taking the Udacity Front-End Developer Nanodegree course. The aim of this game is to get the player to the water as many times as you can before for the countdown stops, while also avoiding the enemy bugs. Use the arrow keys to move the player left, right, up or down. Colliding with an enemy bug resets your position. Try it out and make sure to share your high score with me 🌚.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624829434/Portfolio/Project%20Screenshots/tdwys7lyjznthkhxs5t1.png",
         "gif_url": "https://github.com/KarenOk/Classic-Arcade-Game/raw/master/images/demo.gif",
         "live_url": "https://karenok.github.io/classic-arcade-game",

@@ -68,7 +68,7 @@
     },
     "whatsapp-web-clone":{
         "name": "Whatsapp Web Clone",
-        "description": "Recreated the current Whatapp Web's UI. Best part? It handles both dark or light mode depending on your device's settings. Hoping to add the backend functionality sometime in the future.",
+        "description": "Recreated the current Whatsapp Web's UI. Best part? It handles both dark or light mode depending on your device's settings. Implemented a simple backend service for communication with this clone using websocket technology as well.",
         "image_url": "https://res.cloudinary.com/karso/image/upload/v1624874114/Portfolio/Project%20Screenshots/p8yvzprijsyuro2h9gtb.png",
         "gif_url": "https://res.cloudinary.com/karso/image/upload/v1624868920/Portfolio/Project%20GIFs/tu5chddivl89nactrovw.gif",
         "live_url": "https://whatsapp-clone-web.netlify.app/",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContactPage.css";
 import { useToasts } from "react-toast-notifications";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import {
 	GithubIcon,
 	LinkedinIcon,

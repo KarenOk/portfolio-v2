@@ -1,7 +1,7 @@
 import React from "react";
 import "./PortfolioItem.css";
 import { Link } from "react-router-dom";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import data from "../../data.json";
 import { GithubIcon, LiveIcon } from "../../images/icons/icons";
 import PageNotFound from "../PageNotFound/PageNotFound";

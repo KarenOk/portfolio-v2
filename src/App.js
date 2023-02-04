@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import { Switch, Route, NavLink, useLocation, Link } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import logo from "./logos/logo6 white animated.svg";
 import {
 	MenuIcon,
@@ -66,14 +66,12 @@ function App() {
 				debug: true,
 			});
 		} else ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
-		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
 	useEffect(() => {
 		if (location.pathname === "/") setIsHome(true);
 		else setIsHome(false);
 		setShowNav(false);
-		ReactGA.pageview(location.pathname);
 	}, [location.pathname]);
 
 	useEffect(() => {
@@ -87,7 +85,7 @@ function App() {
 	const updateAppHeight = useCallback(() => {
 		const doc = document.documentElement;
 		doc.style.setProperty("--app-height", `${window.innerHeight}px`);
-	}, [window.innerHeight]);
+	}, []);
 
 	const getNextBanner = () => {
 		let next = banner + 1;

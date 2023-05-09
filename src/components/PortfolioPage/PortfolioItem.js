@@ -48,7 +48,7 @@ const PortfolioItem = ({ closeNav, match }) => {
 								data-color={isMobile ? "white" : "gold"}
 							>
 								<div className="screen">
-									<span class="tooltip__text tooltip__text--bottom">
+									<span className="tooltip__text tooltip__text--bottom">
 										Click to view fullscreen
 									</span>
 									<img
@@ -74,9 +74,8 @@ const PortfolioItem = ({ closeNav, match }) => {
 						/>
 						<div className="portfolio-item__link-wrapper">
 							{project.github_url ? (
-								<ReactGA.OutboundLink
-									eventLabel="Clicked github link for portfolio item"
-									to={project.github_url}
+								<a
+									href={project.github_url}
 									target="_blank"
 									className="portfolio-item__link portfolio-item__link--github"
 								>
@@ -85,20 +84,19 @@ const PortfolioItem = ({ closeNav, match }) => {
 										className="portfolio-item__link-icon"
 									/>{" "}
 									View on Github
-								</ReactGA.OutboundLink>
+								</a>
 							) : (
 								<a />
 							)}
 							{project.live_url ? (
-								<ReactGA.OutboundLink
-									eventLabel="Clicked live link for portfolio item"
-									to={project.live_url}
+								<a
+									href={project.live_url}
 									className="portfolio-item__link portfolio-item__link--live"
 									target="_blank"
 								>
 									<LiveIcon width={20} className="portfolio-item__link-icon" />{" "}
 									View Live
-								</ReactGA.OutboundLink>
+								</a>
 							) : (
 								<a />
 							)}

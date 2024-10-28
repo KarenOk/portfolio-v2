@@ -8,7 +8,7 @@ import {
 	TwitterIcon,
 	InstagramIcon,
 } from "../../images/icons/icons";
-import data from "../../data.json";
+import data from "../../data.jsx";
 import Fade from "react-reveal/Fade";
 
 const encode = (data) => {

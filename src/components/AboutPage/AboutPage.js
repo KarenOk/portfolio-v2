@@ -6,6 +6,14 @@ import Fade from "react-reveal/Fade";
 import animationData from "../../images/lotties/female.json";
 import { HTMLIcon, CodeBracesIcon, WebIcon } from "../../images/icons/icons";
 
+const aboutList = [
+	"I’m a software engineer with 6 years of experience, focused on building user-centered software across diverse sectors.",
+	"I create web applications that are simple to use, adapt well to different devices, and are accessible to everyone.",
+	"I work on both the front and back end, developing everything from websites to full-stack applications and APIs.",
+	"I’m skilled in core engineering concepts, using them to deliver software that’s reliable and impactful.",
+	"I hold a First Class Honours degree in Computer Engineering.",
+];
+
 const AboutPage = () => {
 	return (
 		<section className="about-page">
@@ -35,18 +43,11 @@ const AboutPage = () => {
 							<p className="about-page__text about-page__text--restricted">
 								<strong className="about-page__text--bold"> Who am I? </strong>
 								<ul className="about-page__list">
-									<li className="about-page__list-item">
-										A Software Engineer with hands on experience developing
-										websites, full-stack web applications and APIs.
-									</li>
-									<li className="about-page__list-item">
-										Someone with a good grasp of engineering concepts, data
-										structures, algorithms and the design of systems.
-									</li>
-									<li className="about-page__list-item">
-										A Bachelor’s Degree (First Class Honours) holder in Computer
-										Engineering.
-									</li>
+									{aboutList.map((listItem, i) => (
+										<li className="about-page__list-item" key={i}>
+											{listItem}
+										</li>
+									))}
 
 									<li className="about-page__list-item">
 										Currently making magic at{" "}

@@ -23,10 +23,8 @@ import PortfolioItem from "./components/PortfolioPage/PortfolioItem";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 const banners = [
-	"https://res.cloudinary.com/karso/image/upload/v1644513745/Portfolio/Project%20Banners/r5rhwugjfjmxtmbyz2gf.jpg",
-	"https://res.cloudinary.com/karso/image/upload/v1644513745/Portfolio/Project%20Banners/ypvwujh5iliiqjgeowpi.jpg",
-	"https://res.cloudinary.com/karso/image/upload/v1644513745/Portfolio/Project%20Banners/nng75czwnwnugatr6v9p.jpg",
-	"https://res.cloudinary.com/karso/image/upload/v1644513745/Portfolio/Project%20Banners/ukkbwgyqp6g7g98i1xqs.jpg",
+	"https://res.cloudinary.com/karso/image/upload/v1624824340/Portfolio/Project%20Banners/rrwu6vfrun1sfshm3uin.jpg",
+	"https://res.cloudinary.com/karso/image/upload/v1624824339/Portfolio/Project%20Banners/i7ryav6u9mr5t9ydlja1.jpg",
 ];
 
 const navLinks = [

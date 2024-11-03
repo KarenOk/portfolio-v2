@@ -46,7 +46,7 @@
 }
 
 .about-page__text--restricted {
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .about-page__link, .about-page__link:hover, .about-page__link:active {
@@ -119,9 +119,11 @@
     .about-page__content {
         flex-direction: column;
     }
+
     .about-page__content-left {
         width: calc(100% - 20px);
     }
+
     .about-page__content-right {
         width: 100%;
     }
@@ -131,9 +133,11 @@
     .about-page {
         padding: 40px 20px;
     }
+
     .about-page__heading--main {
         font-size: 2.3em;
     }
+
     .about-page__services {
         display: flex;
         justify-content: center;

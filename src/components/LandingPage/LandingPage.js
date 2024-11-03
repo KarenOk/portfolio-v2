@@ -10,7 +10,7 @@ import {
 	TwitterIcon,
 	InstagramIcon,
 } from "../../images/icons/icons";
-import data from "../../data.json";
+import data from "../../data.jsx";
 
 const navLinks = [
 	{ label: "Home", path: "/" },

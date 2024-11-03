@@ -2,7 +2,7 @@ import React from "react";
 import "./PortfolioPage.css";
 import { Link } from "react-router-dom";
 import { AboutIcon } from "../../images/icons/icons";
-import data from "../../data.json";
+import data from "../../data.jsx";
 import Fade from "react-reveal/Fade";
 
 const PortfolioPage = () => {
